@@ -4,4 +4,537 @@
   justify-content: space-between;
   align-items: center;
   min-height: 100vh; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.home {
+  width: 100%;
+  min-height: 100vh;
+  margin-bottom: 2em;
+}
+
+.netContainer {
+  margin-top: 1em;
+  margin-bottom: 3em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.net {
+  width: 40px;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.net i {
+  font-size: 1.5em;
+  color: #090E16;
+}
+
+.containerAvatar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5em;
+}
+
+.containerCircle {
+  width: 250px;
+  position: relative;
+}
+
+.circle {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: rgba(123, 74, 226, 0.3);
+  filter: blur(25px);
+}
+
+.myAvatar {
+  position: absolute;
+  top: 4em;
+  width: 210px;
+  height: 300px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.skillFloatingReact {
+  position: absolute;
+  top: 5em;
+  left: -1.6em;
+}
+
+.skillFloatingReact i {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #090E16;
+  color: rgba(123, 74, 226, 0.5);
+  font-size: 1.3em;
+
+}
+
+.skillFloatingNode {
+  position: absolute;
+  bottom: 1.8em;
+  left: -.7em;
+}
+
+.skillFloatingNode i {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #090E16;
+  color: rgba(123, 74, 226, 0.5);
+  font-size: 1.3em;
+
+}
+
+.skillFloatingJs {
+  position: absolute;
+  bottom: 4em;
+  right: -1.3em;
+}
+
+.skillFloatingJs i {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #090E16;
+  color: rgba(123, 74, 226, 0.5);
+  font-size: 1.3em;
+}
+
+.containerBtnsDesktop {
+  display: none;
+}
+
+.containerGreetings {
+  width: 100%;
+  padding-left: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: .5em;
+}
+
+
+.greetingsEmoji {
+  width: 120px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(123, 74, 226, 0.1);
+  color: #7B4AE2;
+  border-radius: 8px;
+}
+
+.titleGreetings {
+  font-size: 2.3em;
+  color: #FFFFFF;
+  font-weight: 800;
+}
+
+.subtitleGreetings {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+}
+
+.containerBtnsMobile {
+  margin-top: 1em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1em;
+}
+
+.btnDownloadCvMob {
+  display: flex;
+  text-align: center;
+  gap: .3em;
+  font-weight: 600;
+  border: none;
+  background: none;
+  color: rgba(123, 74, 226, 0.5);
+  font-size: .9em;
+  cursor: pointer;
+}
+
+.btnWhats {
+  width: 150px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .3em;
+  font-weight: 600;
+  border: 1px solid rgba(123, 74, 226, 0.5);
+  background: none;
+  color: rgba(123, 74, 226, 0.5);
+  border-radius: 8px;
+  font-size: .8em;
+  cursor: pointer;
+}
+
+.netContainerDesktop {
+  display: none;
+}
+
+@media screen and (min-width: 480px) {
+
+  .net {
+    width: 50px;
+  }
+
+  .net i {
+    font-size: 2em;
+  }
+
+  .containerCircle {
+    width: 300px;
+    height: 300px;
+    position: relative;
+  }
+
+  .myAvatar {
+    position: absolute;
+    top: 7em;
+    width: 240px;
+    height: 360px;
+  }
+
+  .skillFloatingReact {
+    position: absolute;
+    top: 7em;
+    left: -1.8em;
+  }
+
+  .skillFloatingJs {
+    bottom: 4em;
+    right: -.9em;
+  }
+
+  .greetingsEmoji {
+    width: 150px;
+    height: 35px;
+    font-size: 1.2em;
+  }
+
+  .titleGreetings {
+    font-size: 2.8em;
+  }
+
+  .subtitleGreetings {
+    font-size: 1.2em;
+  }
+
+  .btnDownloadCvMob {
+    font-size: 1.2em;
+  }
+
+  .btnWhats {
+    height: 50px;
+    font-size: 1.2em;
+    padding-inline: 1em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .netContainer {
+    margin-top: 2em;
+  }
+
+  .containerCircle {
+    width: 330px;
+    height: 330px;
+  }
+
+  .myAvatar {
+    top: 7em;
+  }
+
+  .skillFloatingReact {
+    top: 8em;
+    left: -3em;
+  }
+
+  .skillFloatingReact i {
+    width: 50px;
+    height: 50px;
+    font-size: 2em;
+  }
+
+  .skillFloatingNode {
+    bottom: 1.5em;
+    left: -.5em;
+
+  }
+
+  .skillFloatingNode i {
+    width: 50px;
+    height: 50px;
+    font-size: 2em;
+  }
+
+
+  .skillFloatingJs {
+    bottom: 5em;
+    right: -1.5em;
+  }
+
+  .skillFloatingJs i {
+    width: 50px;
+    height: 50px;
+    font-size: 2em;
+  }
+
+  .greetingsEmoji {
+    width: 180px;
+    height: 40px;
+    font-size: 1.5em;
+  }
+
+  .titleGreetings {
+    font-size: 3em;
+  }
+
+  .subtitleGreetings {
+    font-size: 1.5em;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  .home {
+    margin-top: 4.5em;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+
+  .containerAvatar {
+    display: flex;
+    position: relative;
+  }
+
+  .containerCircle {
+    position: absolute;
+    top: 0;
+    left: 1em;
+    bottom: 0;
+    margin: auto;
+    width: 330px;
+    height: 330px;
+  }
+
+  .containerBtnsDesktop {
+    position: absolute;
+    top: 0;
+    right:  2em;
+    bottom: 0;
+    margin: auto;
+    display: initial;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1em;
+  }
+
+  .netContainer {
+    display: none;
+  }
+
+  .containerGreetings {
+    width: 50%;
+    gap: 1.3em;
+  }
+
+  .containerBtnsMobile {
+    display: none;
+  }
+
+  .greetingsEmoji {
+    width: 180px;
+    height: 40px;
+    font-size: 1.3em;
+  }
+
+  .titleGreetings {
+    font-size: 2.5em;
+  }
+
+  .subtitleGreetings {
+    font-size: 1.2em;
+  }
+
+  .netContainerDesktop {
+    display: initial;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1em;
+  }
+
+  .net {
+    width: 40px;
+  }
+
+  .net i {
+    font-size: 1.5em;
+  }
+
+  .btnCvDesktop {
+    display: flex;
+    text-align: center;
+    gap: .3em;
+    font-weight: 600;
+    border: none;
+    background: none;
+    color: rgba(123, 74, 226, 0.5);
+    font-size: .9em;
+    cursor: pointer;
+  }
+
+  .btnWhatsDesktop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .3em;
+    font-weight: 600;
+    border: 1px solid rgba(123, 74, 226, 0.5);
+    background: none;
+    color: rgba(123, 74, 226, 0.5);
+    border-radius: 8px;
+    font-size: 1em;
+    padding: .8em;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 1366px){
+
+  .containerCircle {
+    top: 0;
+    left: 3em;
+    bottom: 0;
+    margin: auto;
+    width: 350px;
+    height: 350px;
+  }
+
+  .myAvatar {
+    top: 8em;
+    width: 250px;
+    height: 380px;
+  }
+
+  .containerGreetings {
+    width: 50%;
+    gap: 1.3em;
+    padding-left: 4em;
+  }
+
+
+  .containerBtnsDesktop {
+    right:  4em;
+  }
+}
+
+@media screen and (min-width: 1600px){
+  .containerCircle {
+    top: 0;
+    left: 3em;
+    bottom: 0;
+    margin: auto;
+    width: 400px;
+    height: 400px;
+  }
+
+  .myAvatar {
+    top: 10em;
+    width: 280px;
+    height: 400px;
+  }
+
+
+  .skillFloatingReact i {
+    width: 60px;
+    height: 60px;
+    font-size: 2.3em;
+  }
+
+  .skillFloatingNode i {
+    width: 60px;
+    height: 60px;
+    font-size: 2.3em;
+  }
+
+  .skillFloatingJs i {
+    width: 60px;
+    height: 60px;
+    font-size: 2.3em;
+  }
+
+
+  .greetingsEmoji {
+    width: 200px;
+    height: 55px;
+    font-size: 1.7em;
+  }
+
+  .titleGreetings {
+    font-size: 3em;
+  }
+
+  .subtitleGreetings {
+    font-size: 1.5em;
+  }
+
+  .net{
+    width: 50px;
+  }
+
+  .net i {
+    font-size: 1.8em;
+  }
+
+
+  .btnCvDesktop {
+    font-size: 1.5em;
+  }
+
+  .btnWhatsDesktop {
+    font-size: 1.5em;
+  }
 }

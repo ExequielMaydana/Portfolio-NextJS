@@ -1,0 +1,64 @@
+.sectionContact{
+    width: 100%;
+    margin: 3em 0;
+    padding: 0 1em;
+}
+
+.containerTitleContact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 2em;
+}
+
+.emojiContact{
+    width: 120px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(123, 74, 226, 0.1);
+    color: #7B4AE2;
+    border-radius: 8px;
+}
+
+.titleContact{
+    font-size: 1.8em;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.containerItemsContact{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2em;
+}
+
+.itemsWhatsp{
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .3em;
+    font-weight: 600;
+    border: 1px solid rgba(123, 74, 226, 0.5);
+    background: none;
+    color: rgba(123, 74, 226, 0.5);
+    border-radius: 8px;
+    font-size: .9em;
+    cursor: pointer;
+}
+
+.itemsWhatsp i {
+    font-size: 1.5em;
+}
+
+.itemGmail{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: rgba(123, 74, 226, 0.5);
+}

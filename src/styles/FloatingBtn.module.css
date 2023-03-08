@@ -31,7 +31,7 @@
     transform: rotate(-45deg) translate(4px, 1px);
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1024px){
     .menuBurger{
         display: none;
     }

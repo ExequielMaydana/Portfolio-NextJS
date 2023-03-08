@@ -1,0 +1,321 @@
+.sectionPortfolio {
+    width: 100%;
+    margin-bottom: 3em;
+}
+
+.titleTecnologi {
+    width: 100%;
+}
+
+.containerGreetingAndTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5em;
+    margin-bottom: 2em;
+    padding-left: 1em;
+}
+
+.greetingEmoji {
+    width: 120px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(123, 74, 226, 0.1);
+    color: #7B4AE2;
+    border-radius: 8px;
+}
+
+.titlePortfolio {
+    font-size: 1.8em;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.containerLink {
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    margin-bottom: 2em;
+    gap: 1em;
+    padding: 1em;
+
+    scroll-snap-type: x mandatory;
+
+}
+
+.linkWork {
+    padding: .3em;
+    gap: .5em;
+    min-width: 150px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(123, 74, 226, 0.5);
+    border: 1px solid rgba(123, 74, 226, 0.5);
+    border-radius: 8px;
+    cursor: pointer;
+
+    scroll-snap-align: center;
+}
+
+.containerLink::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.containerLink::-webkit-scrollbar-button:increment,
+.containerLink::-webkit-scrollbar-button {
+    display: none;
+}
+
+.containerLink::-webkit-scrollbar:horizontal {
+    height: 8px;
+}
+
+.containerLink::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    border: 1px solid rgba(123, 74, 226, 0.5);
+}
+
+.contenedor::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+.containerCardProject {
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    gap: 1em;
+    padding: 1em;
+
+    scroll-snap-type: x mandatory;
+
+}
+
+.containerCardProject::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.containerCardProject::-webkit-scrollbar-button:increment,
+.containerCardProject::-webkit-scrollbar-button {
+    display: none;
+}
+
+.containerCardProject::-webkit-scrollbar:horizontal {
+    height: 8px;
+}
+
+.containerCardProject::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    border: 1px solid rgba(123, 74, 226, 0.5);
+}
+
+.containerCardProject::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+/* las card que estaban antes */
+
+.cardProject {
+    width: min(100%, 400px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(123, 74, 226, 0.5);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 16px;
+    scroll-snap-align: center;
+}
+
+.cardProjectContent {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding: 1em;
+}
+
+.cardContentTextAndTechnologi {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.cardTitle {
+    font-size: 1em;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.cardParagraph {
+    font-size: .8em;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.contentContainerTechnologi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.technologi {
+    width: 80px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #7B4AE2;
+    background: rgba(123, 74, 226, 0.1);
+    border-radius: 8px;
+}
+
+.containerImgProject {
+    width: 230px;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.imgProject {
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+}
+
+.containerLinksProject {
+    padding-top: 1em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1em;
+}
+
+.containerLinksProject i {
+    color: #7B4AE2;
+    cursor: pointer;
+    font-size: 1.3em;
+}
+
+@media screen and (min-width: 480px) {
+    .greetingEmoji {
+        width: 150px;
+        height: 35px;
+        font-size: 1.2em;
+    }
+
+    .titlePortfolio {
+        font-size: 2em;
+    }
+
+    .linkWork {
+        min-width: 170px;
+        height: 35px;
+        font-size: 1.3em;
+    }
+
+    .cardTitle {
+        font-size: 1.2em;
+    }
+
+    .cardParagraph {
+        font-size: .7em;
+        color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .greetingEmoji {
+        width: 180px;
+        height: 40px;
+        font-size: 1.5em;
+    }
+
+    .titlePortfolio {
+        font-size: 2.3em;
+    }
+
+    .linkWork {
+        min-width: 190px;
+        height: 50px;
+        font-size: 1.5em;
+    }
+
+    .cardTitle {
+        font-size: 1.3em;
+    }
+
+    .cardParagraph {
+        font-size: 1em;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .technologi {
+        width: 100px;
+        height: 35px;
+        font-size: 1.1em;
+    }
+
+    .containerImgProject {
+        width: 300px;
+    }
+
+    .containerLinksProject i {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .containerGreetingAndTitle {
+        margin-bottom: 3.5em;
+    }
+
+    .titlePortfolio br{
+        display: none;
+    }
+
+    .titleTecnologi {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+    }
+
+    .containerLink {
+        width: 65%;
+        overflow: hidden;
+        justify-content: flex-end;
+    }
+
+}
+
+@media screen and (min-width: 1300px) {
+
+    .titlePortfolio {
+        font-size: 2.5em;
+    }
+
+    .cardTitle {
+        font-size: 1.5em;
+    }
+
+    .cardParagraph {
+        font-size: 1.1em;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .containerImgProject {
+        width: 350px;
+    }
+
+}

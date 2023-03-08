@@ -11,9 +11,11 @@ export default function Document() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-          href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300;400;500;600;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300;400;500;600;800&display=swap"
           rel="stylesheet"
         />
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
+
 
         <title>Portfolio\ExeDev</title>
       </Head>
@@ -23,6 +25,7 @@ export default function Document() {
           crossorigin="anonymous"
           strategy="beforeInteractive"
         ></Script>
+
         <Main />
         <NextScript />
       </body>

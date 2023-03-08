@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
-      <NavBar openMenu={openMenu} setOpenMenu={setOpenMenu}/>
+      <NavBar openMenu={openMenu} setOpenMenu={setOpenMenu} />
       <Component {...pageProps} />
       <div className="containerBtnFloating">
         <FloatingButton setOpenMenu={setOpenMenu} openMenu={openMenu} />
