@@ -185,8 +185,8 @@
 }
 
 .btnWhats {
-  width: 150px;
-  height: 30px;
+  width: 180px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -196,8 +196,12 @@
   background: none;
   color: rgba(123, 74, 226, 0.5);
   border-radius: 8px;
-  font-size: .8em;
+  font-size: .9em;
   cursor: pointer;
+}
+
+.btnWhats i {
+  font-size: 1.5em;
 }
 
 .netContainerDesktop {
@@ -417,7 +421,7 @@
     border: none;
     background: none;
     color: rgba(123, 74, 226, 0.5);
-    font-size: .9em;
+    font-size: 1.3em;
     cursor: pointer;
   }
 
@@ -434,6 +438,9 @@
     font-size: 1em;
     padding: .8em;
     cursor: pointer;
+  }
+  .btnWhatsDesktop i {
+    font-size: 1.5em;
   }
 }
 
@@ -526,10 +533,11 @@
 
 
   .btnCvDesktop {
-    font-size: 1.5em;
+    font-size: 2em;
   }
 
   .btnWhatsDesktop {
+    width: 300px;
     font-size: 1.5em;
   }
 }

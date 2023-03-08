@@ -75,3 +75,38 @@
         font-size: 2em;
     }
 }
+
+@media screen and (min-width: 768px) {
+
+    .containerTitleContact{
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3em;
+    }
+
+    .titleContact br{
+        display: none;
+    }
+
+    .containerItemsContact{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .emojiContact {
+        width: 180px;
+        height: 45px;
+        font-size: 1.5em;
+    }
+
+    .titleContact{
+        font-size: 2.3em;
+    }
+
+    .itemsWhatsp{
+        width: 250px;
+        height: 50px;
+        font-size: 1.2em;
+    }
+}
