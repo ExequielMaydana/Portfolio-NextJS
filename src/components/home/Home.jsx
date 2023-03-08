@@ -8,15 +8,15 @@ const Home = () => {
   return (
     <section className={style.home}>
       <div className={style.netContainer}>
-        <div className={style.net}>
+        <Link href="https://www.linkedin.com/in/hernan-exequiel-maydana-913a50218/" target="_blank" className={style.net}>
           <i className="fa-brands fa-linkedin-in"></i>
-        </div>
-        <div className={style.net}>
+        </Link>
+        <Link href="https://github.com/ExequielMaydana" target="_blank" className={style.net}>
           <i className="fa-brands fa-github"></i>
-        </div>
-        <div className={style.net}>
+        </Link>
+        <Link href="https://www.instagram.com/exe._.dev/" target="_blank" className={style.net}>
           <i className="fa-brands fa-instagram"></i>
-        </div>
+        </Link>
       </div>
 
       <div className={style.containerAvatar}>
@@ -89,15 +89,15 @@ const Home = () => {
         </div>
         {/* este aparece en desktop */}
         <div className={style.netContainerDesktop}>
-          <div className={style.net}>
+          <Link href="https://www.linkedin.com/in/hernan-exequiel-maydana-913a50218/" target="_blank" className={style.net}>
             <i className="fa-brands fa-linkedin-in"></i>
-          </div>
-          <div className={style.net}>
+          </Link>
+          <Link href="https://github.com/ExequielMaydana" target="_blank" className={style.net}>
             <i className="fa-brands fa-github"></i>
-          </div>
-          <div className={style.net}>
+          </Link>
+          <Link href="https://www.instagram.com/exe._.dev/" target="_blank" className={style.net}>
             <i className="fa-brands fa-instagram"></i>
-          </div>
+          </Link>
         </div>
       </div>
     </section>
