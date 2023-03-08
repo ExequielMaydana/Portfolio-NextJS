@@ -1,18 +1,19 @@
-.sectionContact{
+.sectionContact {
     width: 100%;
     margin: 3em 0;
     padding: 0 1em;
 }
 
-.containerTitleContact{
+.containerTitleContact {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 2em;
+    gap: .5em;
 }
 
-.emojiContact{
+.emojiContact {
     width: 120px;
     height: 30px;
     display: flex;
@@ -23,20 +24,20 @@
     border-radius: 8px;
 }
 
-.titleContact{
+.titleContact {
     font-size: 1.8em;
     color: #FFFFFF;
     font-weight: 600;
 }
 
-.containerItemsContact{
+.containerItemsContact {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 2em;
 }
 
-.itemsWhatsp{
+.itemsWhatsp {
     width: 200px;
     height: 40px;
     display: flex;
@@ -56,9 +57,21 @@
     font-size: 1.5em;
 }
 
-.itemGmail{
+.itemGmail {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     color: rgba(123, 74, 226, 0.5);
+}
+
+@media screen and (min-width: 480px) {
+    .emojiContact {
+        width: 150px;
+        height: 35px;
+        font-size: 1.2em;
+    }
+
+    .titleContact{
+        font-size: 2em;
+    }
 }
