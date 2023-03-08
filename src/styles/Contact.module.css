@@ -1,7 +1,7 @@
 .sectionContact {
     width: 100%;
-    margin: 3em 0;
     padding: 0 1em;
+    margin-bottom: 10em;
 }
 
 .containerTitleContact {
@@ -108,5 +108,24 @@
         width: 250px;
         height: 50px;
         font-size: 1.2em;
+    }
+
+    .itemGmail{
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 1600px){
+    .titleContact{
+        font-size: 2.5em;
+    }
+    .itemsWhatsp{
+        width: 300px;
+        height: 70px;
+        font-size: 1.5em;
+    }
+
+    .itemGmail{
+        font-size: 1.5em;
     }
 }
