@@ -4,7 +4,7 @@ import style from "../../styles/Carrera.module.css";
 
 const Carrera = () => {
   return (
-    <section className={style.sectionCarrera}>
+    <section id="career" className={style.sectionCarrera}>
 
       <div className={style.containerTitleCarrera}>
         <div className={style.emojiCarrera}>💼 Carrera</div>

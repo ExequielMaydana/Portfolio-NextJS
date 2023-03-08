@@ -42,7 +42,7 @@ const NavBar = ({ openMenu, setOpenMenu }) => {
 
             <li className={style.navLinks}>
               <Link
-                href="/Portfolio"
+                href="#portfolio"
                 className={style.links}
                 onClick={closeMenu}
               >
@@ -51,19 +51,19 @@ const NavBar = ({ openMenu, setOpenMenu }) => {
             </li>
 
             <li className={style.navLinks}>
-              <Link href="/skills" className={style.links} onClick={closeMenu}>
+              <Link href="#skills" className={style.links} onClick={closeMenu}>
                 Habilidades
               </Link>
             </li>
 
             <li className={style.navLinks}>
-              <Link href="/career" className={style.links} onClick={closeMenu}>
+              <Link href="#career" className={style.links} onClick={closeMenu}>
                 Carrera
               </Link>
             </li>
 
             <li className={style.navLinks}>
-              <Link href="/contact" className={style.links} onClick={closeMenu}>
+              <Link href="#contact" className={style.links} onClick={closeMenu}>
                 Contacto
               </Link>
             </li>

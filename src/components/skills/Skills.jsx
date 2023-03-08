@@ -5,7 +5,7 @@ import logoNext from "../../../public/nextLogo.png";
 
 const Skills = () => {
   return (
-    <section className={style.sectionSkills}>
+    <section id="skills" className={style.sectionSkills}>
     
     <div className={style.containerTitle}>
         <div className={style.greetingEmoji}>

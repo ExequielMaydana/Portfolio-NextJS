@@ -7,7 +7,7 @@ import imgECommer from "../../../public/projectsImg/e-commerce-portada.jpg";
 
 const Portfolio = () => {
   return (
-    <section className={style.sectionPortfolio}>
+    <section id="portfolio" className={style.sectionPortfolio}>
       <div className={style.titleTecnologi}>
       <div className={style.containerGreetingAndTitle}>
         <div className={style.greetingEmoji}>🔗 Portfolio</div>
