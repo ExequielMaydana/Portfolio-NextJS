@@ -30,7 +30,7 @@ const NavBar = ({ openMenu, setOpenMenu }) => {
           <ul className={style.navMenu}>
             <li className={style.navLinks}>
               <Link href="/" className={style.links} onClick={closeMenu}>
-                Home
+                Inicio
               </Link>
             </li>
 
