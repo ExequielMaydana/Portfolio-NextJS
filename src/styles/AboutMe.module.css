@@ -1,10 +1,12 @@
 .aboutMe {
+  position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1em;
   margin-bottom: 6em;
+  overflow: hidden;
 }
 
 .AboutMe__ctrTitle {
@@ -42,24 +44,29 @@
 }
 
 .aboutMe__ctrSkills {
+  padding-top: 1em;
+  padding-left: 3em;
   width: 100%;
   display: flex;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 1em;
+  gap: 2em;
 }
 
 .aboutMe__ctrSkills div {
+  width: 150px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  flex-wrap: wrap;
   gap: 0.3em;
 }
 
 .aboutMe__skill {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 0.3em;
   flex-wrap: wrap;
   color: var(--colorLightGray);
@@ -68,6 +75,10 @@
 
 .aboutMe__skill i {
   color: var(--colorAquamarine);
+}
+
+@media screen and (min-width: 320px){
+
 }
 
 @media screen and (min-width: 420px) {

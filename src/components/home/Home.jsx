@@ -1,13 +1,14 @@
 import React from "react";
 import styles from "../../styles/House.module.css";
 import Title from "./Title";
+import BallAnimation from "./BallAnimation";
 
 const Home = () => {
   return (
     <>
       <section className={styles.home}>
         <Title />
-
+        {/* <BallAnimation/> */}
         <div className={styles.home__ctrIndication}>
           <article className={styles.home__indicationOne}>
             <span> Siga hacia abajo</span>

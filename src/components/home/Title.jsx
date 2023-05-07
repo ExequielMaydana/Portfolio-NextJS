@@ -12,7 +12,7 @@ const Title = () => {
         </b>
         , un <br />
         Profesional
-        <br />
+        <br className={styles.title__hrIsNone}/>
         <div className={styles.title__rotateWords}>
           <span>Frontend.</span>
           <span>Backend.</span>
