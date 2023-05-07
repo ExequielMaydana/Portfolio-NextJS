@@ -4,7 +4,7 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  padding-top: 4em;
+  padding-top: 6em;
 }
 
 .home__title {
@@ -178,7 +178,7 @@
   }
   
   .home__ctrIndication{
-    padding-top: 2em;
+    padding-top: 5em;
     width: 100%;
     display: flex;
     align-items: center;
