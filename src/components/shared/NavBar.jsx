@@ -1,10 +1,12 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import style from "../../styles/NavBar.module.css";
-import logo from "../../../public/imgs/logo.png";
 import Link from "next/link";
+import logoNav from "../../../public/icons/leterED.webp";
 
-const NavBar = ({ openMenu, setOpenMenu }) => {
+const NavBar = () => {
+  const [openMenu, setOpenMenu] = useState(false);
+
   const closeMenu = () => {
     setOpenMenu(!openMenu);
   };
@@ -12,63 +14,110 @@ const NavBar = ({ openMenu, setOpenMenu }) => {
   return (
     <>
       <header className={style.header}>
-        <figure className={style.headerFigure}>
-          <Image src={logo} alt="logo" className={style.headerLogo} />
-        </figure>
-
-        <nav
-          className={`${
-            openMenu ? `${style.openMenu} ${style.navOpenMenu}` : style.nav
-          } `}
+        <div
+          className={openMenu ? style.header__hideMenu : ""}
+          onClick={closeMenu}
         >
-          <article className={style.navClose} onClick={closeMenu}>
-            <i className="fa-solid fa-xmark"></i>
-          </article>
-          <figure className={style.navFigure}>
-            <Image src={logo} alt="logo" className={style.navLogo} />
-          </figure>
-          <ul className={style.navMenu}>
-            <li className={style.navLinks}>
-              <Link href="/" className={style.links} onClick={closeMenu}>
-                Inicio
-              </Link>
-            </li>
+         <i className='bx bx-menu'></i>
+        </div>
 
-            <li className={style.navLinks}>
-              <Link href="#aboutMe" className={style.links} onClick={closeMenu}>
-                Sobre mi
-              </Link>
-            </li>
+        <div
+          className={`${
+            openMenu ? `${style.menu__open} ${style.menu}` : style.menu
+          }`}
+        >
+          <nav
+            className={openMenu ? `${style.nav__open} ${style.nav}` : style.nav}
+          >
+            <i className='bx bx-x' onClick={closeMenu}></i>
 
-            <li className={style.navLinks}>
-              <Link
-                href="#portfolio"
-                className={style.links}
-                onClick={closeMenu}
-              >
-                Portfolio
-              </Link>
-            </li>
+            <article className={style.nav__ctrLogo}>
+            <Link href="/" onClick={closeMenu}>
+            <Image
+                src={logoNav}
+                alt="logo menu"
+                className={style.nav__logo}
+              />
+            
+            </Link>
+   
+              <span>
+                Exe <b>D</b>ev
+              </span>
+              <span>Web Developer</span>
+              <hr />
+            </article>
 
-            <li className={style.navLinks}>
-              <Link href="#skills" className={style.links} onClick={closeMenu}>
-                Habilidades
-              </Link>
-            </li>
+            <ul className={style.nav__menu}>
+              <li className={style.nav__item} onClick={closeMenu}>
+                <Link
+                  href="/sobremi"
+                  className={style.nav__link}
+                  onClick={closeMenu}
+                >
+                  Sobre mí
+                </Link>
+              </li>
 
-            <li className={style.navLinks}>
-              <Link href="#career" className={style.links} onClick={closeMenu}>
-                Carrera
-              </Link>
-            </li>
+              <li className={style.nav__item} onClick={closeMenu}>
+                <Link
+                  href="#portfolio"
+                  className={style.nav__link}
+                  onClick={closeMenu}
+                >
+                  Experiencia
+                </Link>
+              </li>
 
-            <li className={style.navLinks}>
-              <Link href="#contact" className={style.links} onClick={closeMenu}>
-                Contacto
-              </Link>
-            </li>
-          </ul>
-        </nav>
+              <li className={style.nav__item} onClick={closeMenu}>
+                <Link
+                  href="#career"
+                  className={style.nav__link}
+                  onClick={closeMenu}
+                >
+                  Portafolio
+                </Link>
+              </li>
+
+              <li className={style.nav__item} onClick={closeMenu}>
+                <Link
+                  href="#contact"
+                  className={style.nav__link}
+                  onClick={closeMenu}
+                >
+                  Contacto
+                </Link>
+              </li>
+              <hr />
+            </ul>
+            <article className={style.nav__footer}>
+              <i className="bx bxl-linkedin"></i>
+              <i className="bx bxl-github"></i>
+              <i className="bx bxl-twitter"></i>
+              <i className="bx bxl-facebook"></i>
+            </article>
+            {/* darkMode */}
+            {/* <div className={style.nav__ctrBtnLightMode}>
+              <div className="toggleWrapper">
+                <input type="checkbox" className="dn" id="dn" />
+                <label htmlFor="dn" className="toggle">
+                  <span className="toggle__handler">
+                    <span className="crater crater--1"></span>
+                    <span className="crater crater--2"></span>
+                    <span className="crater crater--3"></span>
+                  </span>
+                  <span className="star star--1"></span>
+                  <span className="star star--2"></span>
+                  <span className="star star--3"></span>
+                  <span className="star star--4"></span>
+                  <span className="star star--5"></span>
+                  <span className="star star--6"></span>
+                </label>
+              </div>
+            </div> */}
+
+          </nav>
+        </div>
       </header>
     </>
   );

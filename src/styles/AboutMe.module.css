@@ -1,169 +1,83 @@
-.sectionAboutMe {
-    margin-top: 2em;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 4em;
+.aboutMe {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 6em;
 }
 
-.aboutPhoto {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    background-color: #FFF;
-    border-radius: 50%;
-    margin-bottom: 3em;
+.AboutMe__ctrTitle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
 }
 
-.photo {
-    position: relative;
-    top: 1em;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.aboutMe__title {
+  text-align: start;
+  color: var(--colorWhiteSmoke);
+  font-size: var(--sizeTitleSections);
 }
 
-.aboutTextContainer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 1em;
-    gap: .5em;
+.aboutMe__barra {
+  width: 25%;
+  height: 1px;
+  background-color: var(--colorDeepPink);
+  opacity: 0.75;
 }
 
-.emojiTextAbout {
-    width: 120px;
-    height: 30px;
-    display: flex;
-    align-items: center;
+.aboutMe__ctrParagraph {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutMe__paragraph {
+  color: var(--colorLightGray);
+  width: 95%;
+  text-align: center;
+  font-size: var(--sizeParagraph);
+  font-weight: 500;
+}
+
+.aboutMe__ctrSkills {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.aboutMe__ctrSkills div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.3em;
+}
+
+.aboutMe__skill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3em;
+  flex-wrap: wrap;
+  color: var(--colorLightGray);
+  font-size: var(--sizeParagraph);
+}
+
+.aboutMe__skill i {
+  color: var(--colorAquamarine);
+}
+
+@media screen and (min-width: 420px) {
+  .aboutMe__paragraph {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 440px) {
+  .aboutMe__ctrSkills {
     justify-content: center;
-    background: rgba(123, 74, 226, 0.1);
-    color: #7B4AE2;
-    border-radius: 8px;
-}
-
-.titleAbout {
-    font-size: 1.8em;
-    color: #FFFFFF;
-    font-weight: 600;
-}
-
-.aboutParagrhapDesktop {
-    display: none;
-}
-
-.aboutParagrhap {
-    padding: 0 .5em 0 0;
-    font-size: .9em;
-    text-align: start;
-    color: rgba(255, 255, 255, 0.5);
-}
-
-@media screen and (min-width: 480px) {
-    .aboutPhoto {
-        width: 250px;
-        height: 250px;
-    }
-
-    .emojiTextAbout {
-        width: 150px;
-        height: 35px;
-        font-size: 1.2em;
-    }
-
-    .titleAbout {
-        font-size: 2em;
-    }
-
-    .aboutParagrhap {
-        font-size: 1.1em;
-    }
-
-}
-
-@media screen and (min-width: 768px) {
-
-    .aboutPhoto {
-        width: 300px;
-        height: 300px;
-    }
-
-    .emojiTextAbout {
-        width: 180px;
-        height: 40px;
-        font-size: 1.5em;
-    }
-
-    .titleAbout {
-        font-size: 2.3em;
-    }
-
-    .aboutParagrhap {
-        font-size: 1.2em;
-        max-width: 95%;
-
-    }
-}
-
-@media screen and (min-width: 1024px) {
-
-    .sectionAboutMe{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-bottom: 6em;
-    }
-
-    .aboutPhoto {
-        margin: 0 1em;
-        width: 30%;
-        width: 300px;
-        height: 300px;
-    }
-
-    .aboutTextContainer{
-        width: 70%;
-    }
-
-    .emojiTextAbout {
-        width: 180px;
-        height: 40px;
-        font-size: 1.5em;
-    }
-
-    .titleAbout {
-        font-size: 2.5em;
-    }
-
-    .titleAbout br {
-        display:  none;
-    }
-
-    .aboutParagrhapDesktop{
-        max-width: 90%;
-        display: initial;
-        text-align: start;
-        color: rgba(255, 255, 255, 0.5);
-        font-size: 1.2em;
-    }
-
-
-    .aboutParagrhap {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 1600px){
-
-    
-    .sectionAboutMe{
-        margin-bottom: 7em;
-    }
-
-    .aboutPhoto {
-        width: 340px;
-        height: 340px;
-    }
+  }
 }
