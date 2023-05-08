@@ -4,6 +4,8 @@ import Image from "next/image";
 import eCommerce from "../../../public/img-projects/e-commerce.png";
 import coverOng from "../../../public/img-projects/ong.png";
 import coverGym from "../../../public/img-projects/landin-pablocoach.png";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 const CardsWork = () => {
   return (
@@ -17,6 +19,11 @@ const CardsWork = () => {
             className={styles.card__img}
           />
           <div className={styles.card__blurImg}></div>
+          <Link href="https://e-commerce-exedev.netlify.app/" target="_blank">
+            <button className={styles.card__btnImg}>
+              <b>Dóblame!</b>
+            </button>
+          </Link>
         </figure>
         <div className={styles.card__content}>
           <div className={styles.card__text}>
@@ -42,12 +49,19 @@ const CardsWork = () => {
             </div>
           </div>
           <div className={styles.card__icons}>
-            <span className={styles.card__icon} data-tooltip="Repo">
-              <i className="bx bxl-github"></i>
-            </span>
-            <span className={styles.card__icon} data-tooltip="Web">
-              <i className="bx bx-link-external"></i>
-            </span>
+            <Link
+              href="https://github.com/ExequielMaydana/e-commerce-react-v2"
+              target="_blank"
+            >
+              <span className={styles.card__icon} data-tooltip="Repositoio">
+                <i className="bx bxl-github"></i>
+              </span>
+            </Link>
+            <Link href="https://e-commerce-exedev.netlify.app/" target="_blank">
+              <span className={styles.card__icon} data-tooltip="Web">
+                <i className="bx bx-link-external"></i>
+              </span>
+            </Link>
           </div>
         </div>
       </article>
@@ -61,6 +75,11 @@ const CardsWork = () => {
             className={styles.card__img}
           />
           <div className={styles.card__blurImg}></div>
+          <Link href="https://www.angelescallejeros.org.ar/" target="_blank">
+            <button className={styles.card__btnImg}>
+              <b>Dóblame!</b>
+            </button>
+          </Link>
         </figure>
         <div className={styles.card__content}>
           <div className={styles.card__text}>
@@ -79,12 +98,16 @@ const CardsWork = () => {
             </div>
           </div>
           <div className={styles.card__icons}>
-            <span className={styles.card__icon} data-tooltip="Repo">
-              <i className="bx bxl-github"></i>
-            </span>
-            <span className={styles.card__icon} data-tooltip="Web">
-              <i className="bx bx-link-external"></i>
-            </span>
+            <Link href="https://github.com/ExequielMaydana" target="_blank">
+              <span className={styles.card__icon} data-tooltip="Repositoio">
+                <i className="bx bxl-github"></i>
+              </span>
+            </Link>
+            <Link href="https://www.angelescallejeros.org.ar/" target="_blank">
+              <span className={styles.card__icon} data-tooltip="Web">
+                <i className="bx bx-link-external"></i>
+              </span>
+            </Link>
           </div>
         </div>
       </article>
@@ -98,15 +121,20 @@ const CardsWork = () => {
             className={styles.card__img}
           />
           <div className={styles.card__blurImg}></div>
+          <Link href="https://pablosalinacoach.online" target="_blank">
+            <button className={styles.card__btnImg}>
+              <b>Dóblame!</b>
+            </button>
+          </Link>
         </figure>
         <div className={styles.card__content}>
           <div className={styles.card__text}>
             <h3 className={styles.card__title}>Asesoramiento Online</h3>
             <p className={styles.card__paragraph}>
-            Web creada para un compañero! Implemente el backend de Mercado
- Pago para poder recibir pagos online, una vez el pago haya sido
- aceptado, se habilitará un botón de WhatsApp, para que el usuario
- pueda hablar con mi cliente.
+              Web creada para un compañero! Implemente el backend de Mercado
+              Pago para poder recibir pagos online, una vez el pago haya sido
+              aceptado, se habilitará un botón de WhatsApp, para que el usuario
+              pueda hablar con mi cliente.
             </p>
             <div className={styles.card__skillsUsage}>
               <span>next.js</span>
@@ -117,12 +145,16 @@ const CardsWork = () => {
             </div>
           </div>
           <div className={styles.card__icons}>
-            <span className={styles.card__icon} data-tooltip="Repo">
-              <i className="bx bxl-github"></i>
-            </span>
-            <span className={styles.card__icon} data-tooltip="Web">
-              <i className="bx bx-link-external"></i>
-            </span>
+            <Link href="https://github.com/ExequielMaydana" target="_blank">
+              <span className={styles.card__icon} data-tooltip="Repositoio">
+                <i className="bx bxl-github"></i>
+              </span>
+            </Link>
+            <Link href="https://pablosalinacoach.online" target="_blank">
+              <span className={styles.card__icon} data-tooltip="Web">
+                <i className="bx bx-link-external"></i>
+              </span>
+            </Link>
           </div>
         </div>
       </article>

@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "../../styles/AboutMe.module.css";
+import Image from "next/image";
+import imgAbout from "../../../public/imgs/imgAbout.svg";
 
 const AboutMe = () => {
   return (
@@ -8,6 +10,14 @@ const AboutMe = () => {
         <h2 className={styles.aboutMe__title}>SOBRE MÍ</h2>
         <div className={styles.aboutMe__barra}></div>
       </div>
+      <div className={styles.aboutMe__ctrImgAndParagraph}>
+        <figure className={styles.aboutMe__ctrImg}>
+          <Image
+            src={imgAbout}
+            alt="imagen about me"
+            className={styles.aboutMe__img}
+          />
+        </figure>
 
       <article className={styles.aboutMe__ctrParagraph}>
         <p className={styles.aboutMe__paragraph}>
@@ -29,43 +39,45 @@ const AboutMe = () => {
           Estas son algunas tecnologías con las que he estado trabajando
           recientemente.
         </p>
-      </article>
 
-      <article className={styles.aboutMe__ctrSkills}>
-        <div>
-          <p className={styles.aboutMe__skill}>
-            <i className="bx bx-right-arrow"></i>HTML5
-          </p>
-          <p className={styles.aboutMe__skill}>
-            <i className="bx bx-right-arrow"></i>CSS3
-          </p>
-          <p className={styles.aboutMe__skill}>
-            <i className="bx bx-right-arrow"></i>JavaScript (ES6+)
-          </p>
-        </div>
-        <div>
-          <p className={styles.aboutMe__skill}>
-            <i className="bx bx-right-arrow"></i>React.js
-          </p>
-          <p className={styles.aboutMe__skill}>
-            <i className="bx bx-right-arrow"></i>Next.js
-          </p>
-          <p className={styles.aboutMe__skill}>
-            <i className="bx bx-right-arrow"></i>Angular.js
-          </p>
-        </div>
-        <div>
-          <p className={styles.aboutMe__skill}>
-            <i className="bx bx-right-arrow"></i>Node.js
-          </p>
-          <p className={styles.aboutMe__skill}>
-            <i className="bx bx-right-arrow"></i>MongoDB
-          </p>
-          <p className={styles.aboutMe__skill}>
-            <i className="bx bx-right-arrow"></i>PostgreSQL
-          </p>
-        </div>
+        <ul className={styles.aboutMe__ctrSkills}>
+          <li>
+            <p className={styles.aboutMe__skill}>
+              <i className="bx bx-right-arrow"></i>HTML5
+            </p>
+            <p className={styles.aboutMe__skill}>
+              <i className="bx bx-right-arrow"></i>CSS3
+            </p>
+            <p className={styles.aboutMe__skill}>
+              <i className="bx bx-right-arrow"></i>JavaScript (ES6+)
+            </p>
+          </li>
+          <li>
+            <p className={styles.aboutMe__skill}>
+              <i className="bx bx-right-arrow"></i>React.js
+            </p>
+            <p className={styles.aboutMe__skill}>
+              <i className="bx bx-right-arrow"></i>Next.js
+            </p>
+            <p className={styles.aboutMe__skill}>
+              <i className="bx bx-right-arrow"></i>Angular.js
+            </p>
+          </li>
+          <li>
+            <p className={styles.aboutMe__skill}>
+              <i className="bx bx-right-arrow"></i>Node.js
+            </p>
+            <p className={styles.aboutMe__skill}>
+              <i className="bx bx-right-arrow"></i>MongoDB
+            </p>
+            <p className={styles.aboutMe__skill}>
+              <i className="bx bx-right-arrow"></i>PostgreSQL
+            </p>
+          </li>
+        </ul>
       </article>
+      </div>
+
     </section>
   );
 };

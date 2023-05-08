@@ -12,6 +12,7 @@
   display: flex;
   align-items: center;
   gap: 0.3em;
+  margin-bottom: 1em;
 }
 
 .portfolio__title {
@@ -66,9 +67,58 @@
   transition: all 0.5s ease-in-out;
 }
 
+.card__btnImg {
+  position: absolute;
+  top: 0.5em;
+  left: 0.1em;
+  opacity: 0;
+  cursor: pointer;
+}
+
 .card__ctrImg:hover .card__blurImg {
   opacity: 0;
   transition: all 0.5s ease-in-out;
+}
+
+.card__ctrImg:hover .card__btnImg {
+  opacity: 1;
+  font-size: 1em;
+  padding: 0.4em 1em;
+  background-color: var(--colorDeepPink);
+  text-decoration: none;
+  border: none;
+  border-radius: 0.5em;
+  color: var(--colorWhiteSmoke);
+  box-shadow: 0.4em 0.4em 0.4em rgba(0, 0, 0, 0.3);
+}
+
+.card__btnImg::before {
+  position: absolute;
+  content: "";
+  height: 0;
+  width: 0;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(33, 33, 33, 1) 0%,
+    rgba(33, 33, 33, 1) 50%,
+    rgba(150, 4, 31, 1) 50%,
+    rgba(191, 4, 38, 1) 60%
+  );
+  border-radius: 0 0 0.5em 0;
+  box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+.card__btnImg:hover::before {
+  width: 1.6em;
+  height: 1.6em;
+}
+
+.card__btnImg:active {
+  box-shadow: 0.2em 0.2em 0.3em rgba(0, 0, 0, 0.3);
+  transform: translate(0.1em, 0.1em);
 }
 
 .card__content {
@@ -116,7 +166,7 @@
 
 .card__skillsUsage span {
   color: var(--colorAquamarine);
-  font-size: 14px;
+  font-size: 0.8rem;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -126,7 +176,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 3em;
+  gap: 0.5em;
   padding-top: 1em;
 }
 
@@ -176,4 +226,37 @@
 .card__icon i:hover {
   color: var(--colorAquamarine);
   transition: 0.2s ease-in-out;
+}
+
+@media screen and (min-width: 640px) {
+  .card__ctrImg:hover .card__btnImg {
+    text-transform: uppercase;
+    font-size: 1em;
+    padding: 0.5em 1em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1em;
+  }
+
+  .card__img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .card__content {
+    width: 50%;
+    padding-top: 0.5em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card__skillsUsage {
+    justify-content: flex-start;
+  }
 }

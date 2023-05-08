@@ -32,7 +32,7 @@
   --sizeIconsMenu: 1.8em; /* 22px */
   --sizeIconsBtns: 1.4em; /* 22.4 */
 
-  --sizeIconsPortfolio: 1.125em; /* 24 */
+  --sizeIconsPortfolio: 1.2em; /* 24 */
   --sizeStackCardPort: 0.813em; /* 13 */
 
   /* border */
@@ -637,6 +637,11 @@ input:checked + .toggle .star--6 {
     top: 8em;
     right: 10em;
   }
+  :root{
+    --sizeParagraph: 1.1em; /* 16px */
+
+  }
+
 }
 
 @media screen and (min-width: 768px) {
