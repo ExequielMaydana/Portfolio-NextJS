@@ -6,7 +6,7 @@ import "@/styles/globals.css";
 import LoadingLine from "@/components/loading/LoadingLine";
 
 export default function App({ Component, pageProps }) {
-  
+
   const [renderOn, setRenderOn] = useState(true);
 
   useEffect(() => {

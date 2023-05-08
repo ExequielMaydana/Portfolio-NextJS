@@ -3,10 +3,16 @@ import styles from "../../styles/House.module.css";
 
 const BallAnimation = () => {
   return (
-    <div className={styles.ctrBall}>
-
-    </div>
-  
+      <div class="view">
+        <div class="plane main">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+      </div>
   );
 };
 

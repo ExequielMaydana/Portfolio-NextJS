@@ -8,7 +8,7 @@ const Home = () => {
     <>
       <section className={styles.home}>
         <Title />
-        {/* <BallAnimation/> */}
+        <BallAnimation/>
         <div className={styles.home__ctrIndication}>
           <article className={styles.home__indicationOne}>
             <span> Siga hacia abajo</span>

@@ -34,35 +34,35 @@ const AboutMe = () => {
       <article className={styles.aboutMe__ctrSkills}>
         <div>
           <p className={styles.aboutMe__skill}>
-            <i class="bx bx-right-arrow"></i>HTML5
+            <i className="bx bx-right-arrow"></i>HTML5
           </p>
           <p className={styles.aboutMe__skill}>
-            <i class="bx bx-right-arrow"></i>CSS3
+            <i className="bx bx-right-arrow"></i>CSS3
           </p>
           <p className={styles.aboutMe__skill}>
-            <i class="bx bx-right-arrow"></i>JavaScript (ES6+)
-          </p>
-        </div>
-        <div>
-          <p className={styles.aboutMe__skill}>
-            <i class="bx bx-right-arrow"></i>React.js
-          </p>
-          <p className={styles.aboutMe__skill}>
-            <i class="bx bx-right-arrow"></i>Next.js
-          </p>
-          <p className={styles.aboutMe__skill}>
-            <i class="bx bx-right-arrow"></i>Angular.js
+            <i className="bx bx-right-arrow"></i>JavaScript (ES6+)
           </p>
         </div>
         <div>
           <p className={styles.aboutMe__skill}>
-            <i class="bx bx-right-arrow"></i>Node.js
+            <i className="bx bx-right-arrow"></i>React.js
           </p>
           <p className={styles.aboutMe__skill}>
-            <i class="bx bx-right-arrow"></i>MongoDB
+            <i className="bx bx-right-arrow"></i>Next.js
           </p>
           <p className={styles.aboutMe__skill}>
-            <i class="bx bx-right-arrow"></i>PostgreSQL
+            <i className="bx bx-right-arrow"></i>Angular.js
+          </p>
+        </div>
+        <div>
+          <p className={styles.aboutMe__skill}>
+            <i className="bx bx-right-arrow"></i>Node.js
+          </p>
+          <p className={styles.aboutMe__skill}>
+            <i className="bx bx-right-arrow"></i>MongoDB
+          </p>
+          <p className={styles.aboutMe__skill}>
+            <i className="bx bx-right-arrow"></i>PostgreSQL
           </p>
         </div>
       </article>
