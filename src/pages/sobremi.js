@@ -1,14 +1,20 @@
-import React from 'react'
+import PageContent from "@/components/about/PageContent";
+import React from "react";
 
 const Sobremi = () => {
-
-
   return (
-    
-    <div className='page'>
+    <>
+      <div className="page">
+        <PageContent />
+      </div>
+      <article>
+        <div className="squares1"></div>
+        <div className="squares2"></div>
+        <div className="squares3"></div>
+        <div className="squares4"></div>
+      </article>
+    </>
+  );
+};
 
-    </div>
-  )
-}
-
-export default Sobremi
+export default Sobremi;

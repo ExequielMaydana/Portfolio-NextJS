@@ -29,7 +29,7 @@
   opacity: 0.75;
 }
 
-.aboutMe__ctrImgAndParagraph{
+.aboutMe__ctrImgAndParagraph {
   width: 100%;
 }
 
@@ -90,15 +90,8 @@
   }
 }
 
-@media screen and (min-width: 640px){
-
-}
-
-
-
-@media screen and (min-width: 1300px){
-
-  .aboutMe__ctrImgAndParagraph{
+@media screen and (min-width: 1300px) {
+  .aboutMe__ctrImgAndParagraph {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -116,5 +109,4 @@
     height: 100%;
     object-fit: contain;
   }
-  
 }

@@ -10,11 +10,15 @@
   --colorDeepPink: #ff004d;
   --colorWhiteSmoke: #eaebed;
 
+  --colorOrangeRed: #e65100; 
+  --colorBlueViolet: #8a2be2;
+  --colorDodgerBlue: #0277bd;
+
   /* font size */
   --sizeTitleHome: 2.8em; /* 44.8px */
   --sizeRotateHome: 0.8em; /* 12.8px */
 
-  --sizeTitleSections: 2em; /* 32px */
+  --sizeTitleSections: 1.8em; /* 32px */
   --sizeParagraph: 1em; /* 16px */
 
   --sizeTitleCard: 1.5em;
@@ -93,7 +97,7 @@ a {
 /*  */
 .page {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 /* icon burguer */

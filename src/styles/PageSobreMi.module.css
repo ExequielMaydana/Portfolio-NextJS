@@ -1,0 +1,131 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 5rem 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+}
+
+.container__text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container__title {
+  color: var(--colorWhiteSmoke);
+  font-size: var(--sizeTitleSections);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.container__text div {
+  width: 180px;
+  height: 1px;
+  background-color: var(--colorDeepPink);
+  opacity: 0.75;
+  margin-bottom: 1em;
+}
+
+.container__paragraph {
+  color: var(--colorLightGray);
+  font-size: var(--sizeParagraph);
+  font-weight: 400;
+}
+
+.container__link {
+  color: rgb(105, 129, 209);
+  font-weight: 400;
+}
+
+.container__fma {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.benefits {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.benefits p{
+    margin-top: .5em;
+}
+
+.benefits__intro {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.benefits__title {
+  color: var(--colorWhiteSmoke);
+}
+
+.benefits__divider {
+  width: 100px;
+  height: 1px;
+  background-color: var(--colorDeepPink);
+  margin-bottom: 1em;
+}
+
+.benefits__cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.benefits__card {
+  width: min(95%, 500px);
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
+  background-color: var(--colorWhiteSmoke);
+  cursor: pointer;
+}
+
+.card__header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5em;
+}
+
+.benefits__ctrIconSearch i {
+  color: var(--colorOrangeRed);
+  font-size: 1.2em;
+}
+
+.benefits__ctrIconMob i {
+  color: var(--colorBlueViolet);
+  font-size: 1.2em;
+}
+
+.benefits__ctrIconCde i {
+  color: var(--colorDodgerBlue);
+  font-size: 1.2em;
+}
+
+.card__title {
+  font-weight: 700;
+  font-size: 0.938em; /* 15 px*/
+}
+
+.card__paragraph {
+  font-size: 0.875em; /* 14 px*/
+  font-weight: 300;
+}
+
+.benefits__card:hover {
+  background-color: var(--colorWhite);
+  box-shadow: 4px 4px 25px var(--colorWhiteSmoke);
+  transform: scale(1.05);
+}

@@ -53,7 +53,7 @@ const CardsWork = () => {
               href="https://github.com/ExequielMaydana/e-commerce-react-v2"
               target="_blank"
             >
-              <span className={styles.card__icon} data-tooltip="Repositoio">
+              <span className={styles.card__icon} data-tooltip="Repositorio">
                 <i className="bx bxl-github"></i>
               </span>
             </Link>
@@ -99,7 +99,7 @@ const CardsWork = () => {
           </div>
           <div className={styles.card__icons}>
             <Link href="https://github.com/ExequielMaydana" target="_blank">
-              <span className={styles.card__icon} data-tooltip="Repositoio">
+              <span className={styles.card__icon} data-tooltip="Repositorio">
                 <i className="bx bxl-github"></i>
               </span>
             </Link>
@@ -146,7 +146,7 @@ const CardsWork = () => {
           </div>
           <div className={styles.card__icons}>
             <Link href="https://github.com/ExequielMaydana" target="_blank">
-              <span className={styles.card__icon} data-tooltip="Repositoio">
+              <span className={styles.card__icon} data-tooltip="Repositorio">
                 <i className="bx bxl-github"></i>
               </span>
             </Link>
