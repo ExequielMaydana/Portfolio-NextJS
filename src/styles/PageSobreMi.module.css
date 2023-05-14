@@ -1,10 +1,32 @@
 .container {
   width: 100%;
   min-height: 100vh;
-  padding: 5rem 1em;
+  padding: 5em 1em 2em 1em;
   display: flex;
   flex-direction: column;
   gap: 3em;
+}
+
+.container__route{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: .5em;
+  color: var(--colorLightGray);
+  font-weight: 900;
+}
+
+.container__route p {
+  font-weight: 300;
+}
+
+.route{
+  cursor: pointer;
+}
+
+.route:hover{
+  color: var(--colorWhiteSmoke);
 }
 
 .container__aboutAndAcademic {

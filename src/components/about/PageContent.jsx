@@ -1,84 +1,88 @@
 import React from "react";
 import styles from "../../styles/PageSobreMi.module.css";
 import Link from "next/link";
+import { useRouter } from "next/router";
 const PageContent = () => {
+
+  const router = useRouter();
+
+  const goToHome = () => {
+    router.push("/");
+  };
+
   return (
     <section className={styles.container}>
-        <article className={styles.container__aboutAndAcademic}>
+       <div className={styles.container__route}>
+              <p onClick={goToHome} className={styles.route}>Inicio</p> - <p>Sobre mí</p>
+            </div>
+      <article className={styles.container__aboutAndAcademic}>
         <div className={styles.container__about}>
-        <h2 className={styles.container__title}>¿Quien soy?</h2>
-        <div></div>
-        <p className={styles.container__paragraph}>
-          Soy un Desarrollador Web Full-Stack ubicado en Entre Ríos, una
-          Provincia Argentina ubicada en el noreste de Argentina.
-          <br />
-          <br />
-          A lo largo de mi formación como Desarrollador he enfatizado la
-          importancia del código escalable, gran atención al detalle, proactivo
-          y con capacidad para desarrollar páginas web elegantes y pioneras para
-          clientes exigentes.
-          <br />
-          <br />
-          Interesado en trabajar en proyectos ambiciosos y con gente positiva.
-          <br />
-          <br />
-          <Link href="/contact" className={styles.container__link}>
-            Hagamos algo especial
-          </Link>
-        </p>
-      </div>
+          <h2 className={styles.container__title}>¿Quien soy?</h2>
+          <div></div>
+          <p className={styles.container__paragraph}>
+            Soy un Desarrollador Web Full-Stack ubicado en Entre Ríos, una
+            Provincia Argentina ubicada en el noreste de Argentina.
+            <br />
+            <br />
+            A lo largo de mi formación como Desarrollador he enfatizado la
+            importancia del código escalable, gran atención al detalle,
+            proactivo y con capacidad para desarrollar páginas web elegantes y
+            pioneras para clientes exigentes.
+            <br />
+            <br />
+            Interesado en trabajar en proyectos ambiciosos y con gente positiva.
+            <br />
+            <br />
+            <Link href="/contact" className={styles.container__link}>
+              Hagamos algo especial
+            </Link>
+          </p>
+        </div>
 
-      <div className={styles.container__academic}>
-        <h3 className={styles.container__title}>Formación Académica</h3>
-        <p className={styles.container__paragraph}>
-          Programacion Web con Java y SQL
-          <br/>
-          <Link
-            href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa"
-            target="_blank"
-            className={styles.container__link}
-          >
-            Argentina Programa
-          </Link>
-          <br />
-          <Link
-            href="/certificate-AP.pdf"
-            download="certificado-argentina-programa"
-            target="_blank"
-            className={styles.container__link}
-          >
-            certificado
-          </Link>
-        </p>
+        <div className={styles.container__academic}>
+          <h3 className={styles.container__title}>Formación Académica</h3>
+          <p className={styles.container__paragraph}>
+            Programacion Web con Java y SQL
+            <br />
+            <Link
+              href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa"
+              target="_blank"
+              className={styles.container__link}
+            >
+              Argentina Programa
+            </Link>
+            <br />
+            <Link
+              href="/certificate-AP.pdf"
+              download="certificado-argentina-programa"
+              target="_blank"
+              className={styles.container__link}
+            >
+              certificado
+            </Link>
+          </p>
 
-        <p className={styles.container__paragraph}>
-          Desarrollador Web Full-Stack
-          <br />
-          <Link
-            href="https://www.academlo.com/"
-            className={styles.container__link}
-          >
-            Academlo
-          </Link>
-          <br />
-          <Link
-            href="/certificate-A.pdf"
-            download="certificado-academlo"
-            target="_blank"
-            className={styles.container__link}
-          >
-            certificado
-          </Link>
-        </p>
-      </div>
-        </article>
-        
-     
-
-   
-
-
-
+          <p className={styles.container__paragraph}>
+            Desarrollador Web Full-Stack
+            <br />
+            <Link
+              href="https://www.academlo.com/"
+              className={styles.container__link}
+            >
+              Academlo
+            </Link>
+            <br />
+            <Link
+              href="/certificate-A.pdf"
+              download="certificado-academlo"
+              target="_blank"
+              className={styles.container__link}
+            >
+              certificado
+            </Link>
+          </p>
+        </div>
+      </article>
 
       <article className={styles.benefits}>
         <div className={styles.benefits__intro}>
@@ -114,7 +118,7 @@ const PageContent = () => {
           <article className={styles.benefits__card}>
             <div className={styles.card__header}>
               <div className={styles.benefits__ctrIconMob}>
-                <i class="bx bx-mobile-alt"></i>{" "}
+                <i className="bx bx-mobile-alt"></i>{" "}
               </div>
               <h4 className={styles.card__title}>Responsive Design</h4>
             </div>
@@ -129,7 +133,7 @@ const PageContent = () => {
           <article className={styles.benefits__card}>
             <div className={styles.card__header}>
               <div className={styles.benefits__ctrIconCde}>
-                <i class="bx bx-code-alt"></i>
+                <i className="bx bx-code-alt"></i>
               </div>
               <h4 className={styles.card__title}>Reusable & Minimal code</h4>
             </div>
