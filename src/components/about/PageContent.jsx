@@ -4,7 +4,8 @@ import Link from "next/link";
 const PageContent = () => {
   return (
     <section className={styles.container}>
-      <div className={styles.container__text}>
+        <article className={styles.container__aboutAndAcademic}>
+        <div className={styles.container__about}>
         <h2 className={styles.container__title}>¿Quien soy?</h2>
         <div></div>
         <p className={styles.container__paragraph}>
@@ -26,11 +27,12 @@ const PageContent = () => {
           </Link>
         </p>
       </div>
-      <div className={styles.container__fma}>
+
+      <div className={styles.container__academic}>
         <h3 className={styles.container__title}>Formación Académica</h3>
         <p className={styles.container__paragraph}>
           Programacion Web con Java y SQL
-          <br />
+          <br/>
           <Link
             href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa"
             target="_blank"
@@ -69,6 +71,15 @@ const PageContent = () => {
           </Link>
         </p>
       </div>
+        </article>
+        
+     
+
+   
+
+
+
+
       <article className={styles.benefits}>
         <div className={styles.benefits__intro}>
           <span className={styles.benefits__title}>BENEFICIOS</span>

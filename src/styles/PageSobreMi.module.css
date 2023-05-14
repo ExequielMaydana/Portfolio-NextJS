@@ -1,16 +1,24 @@
 .container {
   width: 100%;
   min-height: 100vh;
-  padding: 5rem 1em;
+  padding: 5rem 0;
   display: flex;
   flex-direction: column;
-  gap: 5em;
+  gap: 3em;
 }
 
-.container__text {
+.container__aboutAndAcademic {
   width: 100%;
   display: flex;
   flex-direction: column;
+  gap: 3em;
+}
+
+.container__about {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
 }
 
 .container__title {
@@ -39,7 +47,7 @@
   font-weight: 400;
 }
 
-.container__fma {
+.container__academic {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -53,8 +61,8 @@
   gap: 1em;
 }
 
-.benefits p{
-    margin-top: .5em;
+.benefits p {
+  margin-top: 0.5em;
 }
 
 .benefits__intro {
@@ -77,15 +85,17 @@
 .benefits__cards {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 2em;
 }
 
 .benefits__card {
-  width: min(95%, 500px);
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
+  width: min(95%, 250px);
+  height: 210px;
+  display: grid;
+  grid-template-rows: auto auto;
   padding: 1em;
   background-color: var(--colorWhiteSmoke);
   cursor: pointer;
@@ -128,4 +138,39 @@
   background-color: var(--colorWhite);
   box-shadow: 4px 4px 25px var(--colorWhiteSmoke);
   transform: scale(1.05);
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    gap: 5em;
+  }
+
+  .container__aboutAndAcademic {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .benefits {
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5em;
+  }
+
+  .benefits__intro {
+    width: 30%;
+  }
+
+  .benefits__cards {
+    width: 70%;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1225px) {
+  .benefits__cards {
+    justify-content: flex-start;
+  }
 }

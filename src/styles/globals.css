@@ -10,7 +10,7 @@
   --colorDeepPink: #ff004d;
   --colorWhiteSmoke: #eaebed;
 
-  --colorOrangeRed: #e65100; 
+  --colorOrangeRed: #e65100;
   --colorBlueViolet: #8a2be2;
   --colorDodgerBlue: #0277bd;
 
@@ -641,11 +641,9 @@ input:checked + .toggle .star--6 {
     top: 8em;
     right: 10em;
   }
-  :root{
+  :root {
     --sizeParagraph: 1.1em; /* 16px */
-
   }
-
 }
 
 @media screen and (min-width: 768px) {
@@ -666,6 +664,12 @@ input:checked + .toggle .star--6 {
   .bx-x {
     display: none;
   }
+
+  .page {
+    padding-left: 350px;
+    padding-right: 3em;
+  }
+
   :root {
     --sizeTitleHome: 3.8em; /* 44.8px */
     --sizeRotateHome: 0.6em; /* 12.8px */
@@ -684,4 +688,3 @@ input:checked + .toggle .star--6 {
     height: 150px;
   }
 }
-
