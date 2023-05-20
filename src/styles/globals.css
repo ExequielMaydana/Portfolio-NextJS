@@ -72,12 +72,14 @@ body {
   /* font-family: font-file-82132; */
   font-family: "Roboto", sans-serif;
   width: 100%;
+  min-height: 100vh;
 }
 
 #__next {
   width: 100%;
   max-width: 1366px;
   min-height: 100vh;
+  flex: 1;
 }
 
 h1,
@@ -103,6 +105,7 @@ a {
 .page {
   width: 100%;
   min-height: 100vh;
+  flex: 1;
 }
 
 /* icon burguer */

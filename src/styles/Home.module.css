@@ -10,6 +10,10 @@
   .main{
     padding-left: 350px;
     padding-right: 3em;
+    flex: 1;
+    min-height: 100vh;
+
+
   }
   
 }
