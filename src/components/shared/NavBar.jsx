@@ -60,17 +60,7 @@ const NavBar = () => {
 
               <li className={style.nav__item} onClick={closeMenu}>
                 <Link
-                  href="#portfolio"
-                  className={style.nav__link}
-                  onClick={closeMenu}
-                >
-                  Experiencia
-                </Link>
-              </li>
-
-              <li className={style.nav__item} onClick={closeMenu}>
-                <Link
-                  href="#career"
+                  href="/#career"
                   className={style.nav__link}
                   onClick={closeMenu}
                 >
