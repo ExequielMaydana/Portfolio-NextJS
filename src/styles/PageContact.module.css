@@ -58,6 +58,14 @@
   text-align: center;
 }
 
+.pageContact__what {
+  position: fixed;
+  right: 0.5em;
+  bottom: 0.5em;
+  color: #00bb2d;
+  font-size: 2em;
+}
+
 @media screen and (min-width: 480px) {
   .pageContact__subtitle {
     width: 90%;
@@ -97,4 +105,27 @@
   .pageContact__subtitle {
     width: 100%;
   }
+
+  .pageContact__what {
+    position: fixed;
+    top: 2em;
+    right: 2em;
+    color: #00bb2d;
+    font-size: 2em;
+  }
+  
+}
+
+@media screen and (min-width: 1280px){
+    .pageContact__what {
+        right: 3.5em;
+      }
+
+}
+
+@media screen and (min-width: 1280px){
+    .pageContact__what {
+        right: 4.5em;
+      }
+
 }
