@@ -14,9 +14,7 @@ const Contact = () => {
 
       <article className={styles.contact__textAndForm}>
         <div className={styles.contact__paragraph}>
-          <p className={styles.paragrapTitle}>
-            ¿Estás buscando un desarrollador web?, no busques más.
-          </p>
+          <p className={styles.paragrapTitle}>¡Creemos algo juntos!</p>
           <p className={styles.paragraph}>
             ¿Le ha interesado mi perfil? ¿Buscas un desarrollador con talento
             para dar vida a tu solución web? ¡Cuéntamelo!
