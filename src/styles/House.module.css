@@ -276,7 +276,6 @@
 }
 
 @media screen and (min-width: 640px) {
-
   .title__hrIsNone {
     display: none;
   }
@@ -286,7 +285,7 @@
   }
 
   .title__rotateWords span {
-    margin-top: 0.40em;
+    margin-top: 0.4em;
   }
 
   .home__ctrBtnAndText {
@@ -295,7 +294,7 @@
 }
 
 @media screen and (min-width: 992px) {
-  .home{
+  .home {
     padding-top: 2em;
     margin-bottom: 8em;
   }

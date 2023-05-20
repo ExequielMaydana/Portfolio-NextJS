@@ -18,7 +18,7 @@ const NavBar = () => {
           className={openMenu ? style.header__hideMenu : ""}
           onClick={closeMenu}
         >
-         <i className='bx bx-menu'></i>
+          <i className="bx bx-menu"></i>
         </div>
 
         <div
@@ -29,18 +29,17 @@ const NavBar = () => {
           <nav
             className={openMenu ? `${style.nav__open} ${style.nav}` : style.nav}
           >
-            <i className='bx bx-x' onClick={closeMenu}></i>
+            <i className="bx bx-x" onClick={closeMenu}></i>
 
             <article className={style.nav__ctrLogo}>
-            <Link href="/" onClick={closeMenu}>
-            <Image
-                src={logoNav}
-                alt="logo menu"
-                className={style.nav__logo}
-              />
-            
-            </Link>
-   
+              <Link href="/" onClick={closeMenu}>
+                <Image
+                  src={logoNav}
+                  alt="logo menu"
+                  className={style.nav__logo}
+                />
+              </Link>
+
               <span>
                 Exe <b>D</b>ev
               </span>
@@ -91,10 +90,37 @@ const NavBar = () => {
               <hr />
             </ul>
             <article className={style.nav__footer}>
-              <i className="bx bxl-linkedin"></i>
-              <i className="bx bxl-github"></i>
-              <i className="bx bxl-twitter"></i>
-              <i className="bx bxl-facebook"></i>
+              <Link
+                href="https://www.linkedin.com/in/hernan-exequiel-maydana-913a50218/"
+                target="_blank"
+                className={style.nav__footerCtrIcon}
+              >
+                <i className="bx bxl-linkedin"></i>
+              </Link>
+              <Link
+                href="https://github.com/ExequielMaydana"
+                target="_blank"
+                className={style.nav__footerCtrIcon}
+              >
+                <i className="bx bxl-github"></i>
+              </Link>
+
+              <Link
+                href="https://twitter.com/ExeBikerr"
+                target="_blank"
+                className={style.nav__footerCtrIcon}
+              >
+                {" "}
+                <i className="bx bxl-twitter"></i>
+              </Link>
+
+              <Link
+                href="https://www.facebook.com/exe.maydana.3"
+                target="_blank"
+                className={style.nav__footerCtrIcon}
+              >
+                <i className="bx bxl-facebook"></i>
+              </Link>
             </article>
             {/* darkMode */}
             {/* <div className={style.nav__ctrBtnLightMode}>
@@ -115,7 +141,6 @@ const NavBar = () => {
                 </label>
               </div>
             </div> */}
-
           </nav>
         </div>
       </header>

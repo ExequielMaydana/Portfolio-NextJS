@@ -5,7 +5,6 @@ import eCommerce from "../../../public/img-projects/e-commerce.png";
 import coverOng from "../../../public/img-projects/ong.png";
 import coverGym from "../../../public/img-projects/landin-pablocoach.png";
 import Link from "next/link";
-import { useRouter } from "next/router";
 
 const CardsWork = () => {
   return (

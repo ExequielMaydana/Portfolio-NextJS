@@ -1,48 +1,46 @@
 .sectionFooter {
-    padding: 1em 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    gap: 1em;
-    background-color: rgba(123, 74, 226, 0.1);
+  padding: 1em 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  gap: 1em;
+  background-color: var(--backgroundDark);
 }
 
 .containerIconsFooter {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
 }
 
 .iconFooter {
-    width: 40px;
-    aspect-ratio: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.5);
-    border: 1px solid #000000;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
+  width: 40px;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .iconFooter i {
-    font-size: 1.5em;
-    color: #090E16;
+  font-size: 1.5em;
+  color: var(--colorDarkGray);
+  font-size: var(--sizeIconsMenu);
 }
 
 .paragraphFooter {
-    font-size: .8em;
-    color: rgba(255, 255, 255, 0.5);
+  font-size: var( --sizeOtherParagraph);
+  color: var( --colorLightGray);
 }
 
 @media screen and (min-width: 768px) {
-    .paragraphFooter {
-        font-size: 1em;
-    }
+  .paragraphFooter {
+    font-size: 1em;
+  }
 }

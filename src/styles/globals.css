@@ -10,6 +10,8 @@
   --colorDeepPink: #ff004d;
   --colorWhiteSmoke: #eaebed;
 
+  --colorDark: #0c0b0b;
+
   --colorOrangeRed: #e65100;
   --colorBlueViolet: #8a2be2;
   --colorDodgerBlue: #0277bd;
@@ -19,7 +21,10 @@
   --sizeRotateHome: 0.8em; /* 12.8px */
 
   --sizeTitleSections: 1.8em; /* 32px */
+  --sizeSubtitleSections: 1.3em; /* 20.8px */
   --sizeParagraph: 1em; /* 16px */
+
+  --sizeOtherParagraph: 0.9em; /* 14.4px */
 
   --sizeTitleCard: 1.5em;
   --sizeParagraphCard: 1.125em; /* 18px */
@@ -677,6 +682,13 @@ input:checked + .toggle .star--6 {
 }
 
 @media screen and (min-width: 1200px) {
+
+  :root{
+    --sizeOtherParagraph: 1em; /* 16px */
+
+  }
+
+
   .view {
     top: 10em;
     right: 12em;

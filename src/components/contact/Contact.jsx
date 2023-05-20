@@ -1,34 +1,87 @@
-import Link from "next/link";
 import React from "react";
-import style from "../../styles/Contact.module.css";
+import styles from "../../styles/Contact.module.css";
+import Link from "next/link";
+import Image from "next/image";
+import imgContact from "../../../public/imgSections/contact.svg";
 
 const Contact = () => {
   return (
-    <section id="contact" className={style.sectionContact}>
-      <div className={style.containerTitleContact}>
-        <div className={style.emojiContact}>📩 Contacto</div>
-        <h2 className={style.titleContact}>
-          Creemos
-          <br /> algo juntos
-        </h2>
+    <section id="contact" className={styles.contact}>
+      <div className={styles.contact__header}>
+        <h2 className={styles.contact__title}>Contacto</h2>
+        <div className={styles.contact__barra}></div>
       </div>
 
-      <div className={style.containerItemsContact}>
-        <Link
-          href="https://api.whatsapp.com/send/?phone=543454076854"
-          target="_blank"
-          className={style.itemsWhatsp}
-        >
-          <i className="fa-brands fa-whatsapp"></i>
-          Vamos a conversar
-        </Link>
-
-        <div className={style.itemGmail}>
-          <i className="fa-solid fa-paper-plane"></i>
-          Email:
-          <br /> exedevcoding22@gmail.com
+      <article className={styles.contact__textAndForm}>
+        <div className={styles.contact__paragraph}>
+          <p className={styles.paragrapTitle}>
+            ¿Estás buscando un desarrollador web?, no busques más.
+          </p>
+          <p className={styles.paragraph}>
+            ¿Le ha interesado mi perfil? ¿Buscas un desarrollador con talento
+            para dar vida a tu solución web? ¡Cuéntamelo!
+          </p>
+          <div className={styles.contact__ctrWsp}>
+            <Link
+              href="https://wa.link/is1b74"
+              target="_blank"
+              className={styles.pragraph__wsp}
+            >
+              +54 354 076854 <i class="bx bxl-whatsapp"></i>
+            </Link>
+          </div>
+          <Image
+            src={imgContact}
+            alt="ilustration"
+            className={styles.contact__img}
+          />
         </div>
-      </div>
+        <form className={styles.contact__form}>
+          <ul className={styles.form__items}>
+            <li className={styles.form__item}>
+              <label
+                className={styles.form__label}
+                htmlFor="FirstNameAndLastName"
+              >
+                Nombre y Apellido
+              </label>
+
+              <input
+                className={styles.form__input}
+                type="text"
+                id="FirstNameAndLastName"
+                placeholder="ej: Martín Pérez"
+              />
+            </li>
+            <li className={styles.form__item}>
+              <label className={styles.form__label} htmlFor="email">
+                Email
+              </label>
+
+              <input
+                className={styles.form__input}
+                type="email"
+                id="email"
+                placeholder="ej: correo@correo.com"
+              />
+            </li>
+            <li className={styles.form__item}>
+              <label className={styles.form__label} id="message">
+                Deja tu mensaje aquí
+              </label>
+
+              <textarea
+                className={styles.form__textArea}
+                id="message"
+                placeholder="Escribe algo"
+              ></textarea>
+            </li>
+          </ul>
+          <button className={styles.form__btn}>
+            Enviar <i className="bx bx-send"></i>
+          </button>
+        </form>
+      </article>
     </section>
   );
 };

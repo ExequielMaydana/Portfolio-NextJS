@@ -172,7 +172,7 @@
   gap: 2em;
 }
 
-.nav__footer i {
+.nav__footerCtrIcon {
   color: var(--colorDarkGray);
   font-size: var(--sizeIconsMenu);
   cursor: pointer;

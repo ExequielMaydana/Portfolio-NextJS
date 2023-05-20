@@ -20,6 +20,7 @@
   text-align: start;
   color: var(--colorWhiteSmoke);
   font-size: var(--sizeTitleSections);
+  font-weight: 900;
 }
 
 .aboutMe__barra {
