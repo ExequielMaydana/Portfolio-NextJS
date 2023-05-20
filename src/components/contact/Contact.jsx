@@ -3,15 +3,9 @@ import styles from "../../styles/Contact.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import imgContact from "../../../public/imgSections/contact.svg";
-import { useForm } from "react-hook-form";
+import Form from "./Form";
 
 const Contact = () => {
-  const { handleSubmit, register } = useForm();
-
-  const submit = (data) => {
-    console.log(data);
-  };
-
   return (
     <section id="contact" className={styles.contact}>
       <div className={styles.contact__header}>
@@ -41,54 +35,7 @@ const Contact = () => {
             className={styles.contact__img}
           />
         </div>
-        <form onSubmit={handleSubmit(submit)} className={styles.contact__form}>
-          <ul className={styles.form__items}>
-            <li className={styles.form__item}>
-              <label
-                className={styles.form__label}
-                htmlFor="FirstNameAndLastName"
-              >
-                Nombre y Apellido
-              </label>
-
-              <input
-                className={styles.form__input}
-                type="text"
-                id="FirstNameAndLastName"
-                placeholder="ej: Martín Pérez"
-                {...register("nombreyapellido")}
-              />
-            </li>
-            <li className={styles.form__item}>
-              <label className={styles.form__label} htmlFor="email">
-                Email
-              </label>
-
-              <input
-                className={styles.form__input}
-                type="email"
-                id="email"
-                placeholder="ej: correo@correo.com"
-                {...register("email")}
-              />
-            </li>
-            <li className={styles.form__item}>
-              <label className={styles.form__label} id="message">
-                Deja tu mensaje aquí
-              </label>
-
-              <textarea
-                className={styles.form__textArea}
-                id="message"
-                placeholder="Escribe algo"
-                {...register("message")}
-              ></textarea>
-            </li>
-          </ul>
-          <button className={styles.form__btn}>
-            Enviar <i className="bx bx-send"></i>
-          </button>
-        </form>
+        <Form />
       </article>
     </section>
   );

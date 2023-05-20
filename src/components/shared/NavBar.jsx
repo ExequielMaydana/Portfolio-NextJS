@@ -80,7 +80,7 @@ const NavBar = () => {
 
               <li className={style.nav__item} onClick={closeMenu}>
                 <Link
-                  href="#contact"
+                  href="/contact"
                   className={style.nav__link}
                   onClick={closeMenu}
                 >

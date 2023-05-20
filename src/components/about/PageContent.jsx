@@ -3,7 +3,6 @@ import styles from "../../styles/PageSobreMi.module.css";
 import Link from "next/link";
 import { useRouter } from "next/router";
 const PageContent = () => {
-
   const router = useRouter();
 
   const goToHome = () => {
@@ -12,9 +11,12 @@ const PageContent = () => {
 
   return (
     <section className={styles.container}>
-       <div className={styles.container__route}>
-              <p onClick={goToHome} className={styles.route}>Inicio</p> - <p>Sobre mí</p>
-            </div>
+      <div className={styles.container__route}>
+        <p onClick={goToHome} className={styles.route}>
+          Inicio
+        </p>{" "}
+        - <p>Sobre mí</p>
+      </div>
       <article className={styles.container__aboutAndAcademic}>
         <div className={styles.container__about}>
           <h2 className={styles.container__title}>¿Quien soy?</h2>

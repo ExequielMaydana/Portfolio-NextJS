@@ -1,0 +1,100 @@
+/* page /contact */
+.pageContact {
+  width: 100%;
+  min-height: 100vh;
+  padding: 5em 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.pageContact__route {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5em;
+  color: var(--colorLightGray);
+  font-weight: 900;
+}
+
+.pageContact__route p {
+  font-weight: 300;
+}
+
+.route {
+  cursor: pointer;
+}
+
+.route:hover {
+  color: var(--colorWhiteSmoke);
+}
+
+.pageContact__ctrTextAndForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+.pageContact__text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.pageContact__title {
+  color: var(--colorWhiteSmoke);
+  font-weight: 900;
+  font-size: var(--sizeTitleSections);
+}
+
+.pageContact__subtitle {
+  font-size: var(--sizeParagraph);
+  color: var(--colorLightGray);
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  .pageContact__subtitle {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .pageContact__subtitle {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .pageContact__subtitle {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .pageContact__ctrTextAndForm {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 2em;
+  }
+
+  .pageContact__text {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .pageContact__subtitle {
+    width: 100%;
+  }
+}
