@@ -3,8 +3,15 @@ import styles from "../../styles/Contact.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import imgContact from "../../../public/imgSections/contact.svg";
+import { useForm } from "react-hook-form";
 
 const Contact = () => {
+  const { handleSubmit, register } = useForm();
+
+  const submit = (data) => {
+    console.log(data);
+  };
+
   return (
     <section id="contact" className={styles.contact}>
       <div className={styles.contact__header}>
@@ -34,7 +41,7 @@ const Contact = () => {
             className={styles.contact__img}
           />
         </div>
-        <form className={styles.contact__form}>
+        <form onSubmit={handleSubmit(submit)} className={styles.contact__form}>
           <ul className={styles.form__items}>
             <li className={styles.form__item}>
               <label
@@ -49,6 +56,7 @@ const Contact = () => {
                 type="text"
                 id="FirstNameAndLastName"
                 placeholder="ej: Martín Pérez"
+                {...register("nombreyapellido")}
               />
             </li>
             <li className={styles.form__item}>
@@ -61,6 +69,7 @@ const Contact = () => {
                 type="email"
                 id="email"
                 placeholder="ej: correo@correo.com"
+                {...register("email")}
               />
             </li>
             <li className={styles.form__item}>
@@ -72,6 +81,7 @@ const Contact = () => {
                 className={styles.form__textArea}
                 id="message"
                 placeholder="Escribe algo"
+                {...register("message")}
               ></textarea>
             </li>
           </ul>
