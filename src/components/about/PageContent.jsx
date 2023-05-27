@@ -22,14 +22,21 @@ const PageContent = () => {
           <h2 className={styles.container__title}>¿Quien soy?</h2>
           <div></div>
           <p className={styles.container__paragraph}>
-            Soy un Desarrollador Web Full-Stack ubicado en Entre Ríos, una
-            Provincia Argentina ubicada en el noreste de Argentina.
+            Además de mis habilidades técnicas, poseo una mentalidad orientada a
+            la resolución de problemas y una pasión por mantenerme actualizado
+            en las últimas tendencias y avances en el campo del desarrollo web.
+            Me esfuerzo por aprender nuevas tecnologías y herramientas, y
+            siempre busco mejorar mis habilidades a través de la investigación y
+            la participación en proyectos desafiantes.
             <br />
             <br />
-            A lo largo de mi formación como Desarrollador he enfatizado la
-            importancia del código escalable, gran atención al detalle,
-            proactivo y con capacidad para desarrollar páginas web elegantes y
-            pioneras para clientes exigentes.
+            Soy una persona proactiva y altamente motivada, capaz de trabajar de
+            forma independiente y en equipo. Me enorgullece mi capacidad para
+            comunicarme de manera efectiva y colaborar con otros miembros del
+            equipo para lograr resultados excepcionales. Además, cuento con
+            habilidades de organización y gestión del tiempo que me permiten
+            cumplir con los plazos establecidos y entregar proyectos de calidad
+            de manera eficiente.
             <br />
             <br />
             Interesado en trabajar en proyectos ambiciosos y con gente positiva.

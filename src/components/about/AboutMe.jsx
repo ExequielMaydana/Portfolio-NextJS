@@ -21,17 +21,19 @@ const AboutMe = () => {
 
         <article className={styles.aboutMe__ctrParagraph}>
           <p className={styles.aboutMe__paragraph}>
-            ¡Hola! Me llamo Exequiel, disfruto creando cosas que viven en
-            internet. Mi interés por el Desarrollo Web comenzó en el año 2021.
-            Desde entonces he estado estudiando de forma autodidacta, cursos,
-            bootcamps y sobre todo poniendo en práctica lo que he ido
-            aprendiendo.
+            Me complace presentarle mi perfil como Desarrollador Web Full Stack.
+            Con un año de experiencia en el campo, he desarrollado una sólida
+            base de conocimientos y habilidades técnicas que me permiten diseñar
+            y construir aplicaciones web completas y eficientes.
             <br />
             <br />
-            Actualmente, estoy trabajando de manera Freelance como desarrollador
-            Frontend, en algunas ocasiones he tenido que implementar algo de
-            Backend, igualmente les quiero decir que estoy abierto a nuevas
-            oportunidades.
+            Durante mi trayectoria profesional, he trabajado en diversos
+            proyectos en los que he tenido la oportunidad de desempeñar un papel
+            integral en todas las fases del ciclo de vida del desarrollo de
+            software. He colaborado estrechamente con equipos
+            multidisciplinarios, incluyendo diseñadores, desarrolladores
+            frontend y backend, para crear soluciones web de alta calidad y
+            rendimiento.
             <br />
             <br />
             Siempre intentando ser mejor que ayer.
