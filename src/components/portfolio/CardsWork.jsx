@@ -4,6 +4,7 @@ import Image from "next/image";
 import eCommerce from "../../../public/img-projects/e-commerce.png";
 import coverOng from "../../../public/img-projects/ong.png";
 import coverGym from "../../../public/img-projects/landin-pablocoach.png";
+import HE from "../../../public/img-projects/HE.png";
 import Link from "next/link";
 
 const CardsWork = () => {
@@ -150,6 +151,51 @@ const CardsWork = () => {
               </span>
             </Link>
             <Link href="https://pablosalinacoach.online" target="_blank">
+              <span className={styles.card__icon} data-tooltip="Web">
+                <i className="bx bx-link-external"></i>
+              </span>
+            </Link>
+          </div>
+        </div>
+      </article>
+      <article className={styles.card}>
+        <figure className={styles.card__ctrImg}>
+          <Image src={HE} alt="imagen proyecto" className={styles.card__img} />
+          <div className={styles.card__blurImg}></div>
+          <Link href="https://pablosalinacoach.online" target="_blank">
+            <button className={styles.card__btnImg}>
+              <b>Dóblame!</b>
+            </button>
+          </Link>
+        </figure>
+        <div className={styles.card__content}>
+          <div className={styles.card__text}>
+            <h3 className={styles.card__title}>Diario El Heraldo</h3>
+            <p className={styles.card__paragraph}>
+              diario digital creado desde cero para Zaro Estudio Creativo, Mi
+              rol principal fue implementar la interfaz de usuario utilizando
+              Next.js y consumir los endpoints proporcionados por los backend
+              para mostrar el contenido dinámico del diario. Utilicé la potencia
+              de Tailwind CSS para diseñar los estilos, logrando una apariencia
+              moderna y atractiva. Este proyecto representa mi habilidad para
+              trabajar en equipo, adaptarme a los requisitos del cliente y
+              entregar resultados de alta calidad.
+            </p>
+            <div className={styles.card__skillsUsage}>
+              <span>next.js</span>
+              <b>-</b>
+              <span>axios</span>
+              <b>-</b>
+              <span>TailwindCSS</span>
+            </div>
+          </div>
+          <div className={styles.card__icons}>
+            <Link href="https://github.com/ExequielMaydana" target="_blank">
+              <span className={styles.card__icon} data-tooltip="Repositorio">
+                <i className="bx bxl-github"></i>
+              </span>
+            </Link>
+            <Link href="https://www.elheraldo.com.ar/" target="_blank">
               <span className={styles.card__icon} data-tooltip="Web">
                 <i className="bx bx-link-external"></i>
               </span>
