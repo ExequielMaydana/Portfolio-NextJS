@@ -12,37 +12,31 @@ export default function handle(req, res) {
 }
 
 const goToMessage = async (req, res) => {
-  const CLIENT_ID =
-    "1007429619886-dpl6t1cpmvoch4650aaiem5o960mlfim.apps.googleusercontent.com";
-  const CLIENTE_SECRET = "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";
-  const REDIRECT_URI = "https://developers.google.com/oauthplayground";
-  const REFRESH_TOKEN =
-    "1//04idsfNTuWAjICgYIARAAGAQSNwF-L9IrwQNivbXHP9dxcRNQFzFQUJnIMPXDdc8RQO0d5qsuJ0Fvr-XLLIsrEVL9tcuCZzWiaxc";
-
   const oauth2Client = new google.auth.OAuth2(
-    CLIENT_ID,
-    CLIENTE_SECRET,
-    REDIRECT_URI
+    process.env.CLIENT_ID,
+    process.env.CLIENTE_SECRET,
+    process.env.REDIRECT_URI
   );
-  oauth2Client.setCredentials({ refresh_token: REFRESH_TOKEN });
+  oauth2Client.setCredentials({ refresh_token: process.env.REFRESH_TOKEN });
 
   try {
     const accessToken = await oauth2Client.getAccessToken();
+
     const transporte = nodemailer.createTransport({
       service: "gmail",
       auth: {
         type: "OAuth2",
-        user: "exedevcoding22@gmail.com",
-        clientId: CLIENT_ID,
-        clientSecret: CLIENTE_SECRET,
-        refreshToken: REFRESH_TOKEN,
+        user: process.env.MY_EMAIL,
+        clientId: process.env.CLIENT_ID,
+        clientSecret: process.env.CLIENTE_SECRET,
+        refreshToken: process.env.REFRESH_TOKEN,
         accessToken: accessToken,
       },
     });
 
     const mailOptions = {
       from: "My Portfolio <exedevcoding22@gmail.com>",
-      to: "exedevcoding22@gmail.com",
+      to: `${process.env.MY_EMAIL}`,
       subject: `${req.body.nombreyapellido}`,
       html: `
       <p><strong>Correo enviado por:</strong> ${req.body.email}</p>
