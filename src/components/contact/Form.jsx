@@ -6,6 +6,32 @@ import "react-toastify/dist/ReactToastify.css";
 import { Formik } from "formik";
 
 const Form = () => {
+  const sendData = async (values, resetForm) => {
+    try {
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/mailersend`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(values),
+        }
+      );
+
+      if (response) {
+        toast.success("El correo ha sido enviado correctamente!");
+        resetForm();
+      } else {
+        const errorData = await response.json();
+        console.log(errorData);
+      }
+    } catch (error) {
+      // Maneja cualquier error que ocurra durante la solicitud.
+      console.log(error);
+    }
+  };
+
   return (
     <Formik
       initialValues={{
@@ -32,18 +58,7 @@ const Form = () => {
         return errors;
       }}
       onSubmit={(values, { resetForm }) => {
-        axios
-          .post(
-            `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/mailersend`,
-            values
-          )
-          .then((res) => {
-            if (res) {
-              toast.success("El correo ha sido enviado correctamente!");
-              resetForm();
-            }
-          })
-          .catch((err) => console.log(err));
+        sendData(values, resetForm);
       }}
     >
       {({
