@@ -1,31 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "../../styles/Contact.module.css";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { FieldArray, Formik, useFormikContext } from "formik";
+import { Formik } from "formik";
 
 const Form = () => {
-  const [errorName, setNrrorName] = useState("");
-  const [errorEmail, setErrorEmail] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
-
-  const defaultValues = { nombreyapellido: "", email: "", message: "" };
-
-  const submit = (data) => {
-    const isEmail = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
-
-    if (!data.nombreyapellido) {
-      setNrrorName("Requerido");
-    }
-    if (!isEmail.test(data.email)) {
-      setErrorEmail("eso no parece un email");
-    }
-    if (!data.message) {
-      setErrorMessage("Requerido");
-    }
-  };
-
   return (
     <Formik
       initialValues={{
