@@ -33,7 +33,10 @@ const Form = () => {
       }}
       onSubmit={(values, { resetForm }) => {
         axios
-          .post("/api/mailersend", values)
+          .post(
+            `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/mailersend`,
+            values
+          )
           .then((res) => {
             if (res) {
               toast.success("El correo ha sido enviado correctamente!");
