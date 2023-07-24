@@ -26,7 +26,7 @@ const Contact = () => {
               target="_blank"
               className={styles.pragraph__wsp}
             >
-              +54 354 076854 <i class="bx bxl-whatsapp"></i>
+              +54 354 076854 <i className="bx bxl-whatsapp"></i>
             </Link>
           </div>
           <Image

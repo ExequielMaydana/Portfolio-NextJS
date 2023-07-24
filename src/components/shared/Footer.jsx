@@ -26,7 +26,7 @@ const Footer = () => {
             target="_blank"
             className={style.iconFooter}
           >
-            <i class="bx bxl-instagram"></i>{" "}
+            <i className="bx bxl-instagram"></i>{" "}
           </Link>
         </div>
         <p className={style.paragraphFooter}>
