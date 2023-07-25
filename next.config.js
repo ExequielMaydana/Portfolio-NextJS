@@ -10,7 +10,6 @@ const nextConfig = {
     REFRESH_TOKEN:
       "1//04idsfNTuWAjICgYIARAAGAQSNwF-L9IrwQNivbXHP9dxcRNQFzFQUJnIMPXDdc8RQO0d5qsuJ0Fvr-XLLIsrEVL9tcuCZzWiaxc",
     MY_EMAIL: "exedevcoding22@gmail.com",
-    NEXT_PUBLIC_API_BASE_URL: "https://exedeveloper.me",
   },
 };
 

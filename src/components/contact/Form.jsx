@@ -1,38 +1,10 @@
 import React from "react";
 import styles from "../../styles/Contact.module.css";
-import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Formik } from "formik";
 
 const Form = () => {
-  const sendData = async (values, resetForm) => {
-    try {
-      const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/mailersend`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: values,
-        }
-      );
-
-      console.log(response);
-
-      if (response) {
-        toast.success("El correo ha sido enviado correctamente!");
-        resetForm();
-      } else {
-        const errorData = await response.json();
-        console.log(errorData);
-      }
-    } catch (error) {
-      // Maneja cualquier error que ocurra durante la solicitud.
-      console.log(error);
-    }
-  };
 
   return (
     <Formik
@@ -60,7 +32,25 @@ const Form = () => {
         return errors;
       }}
       onSubmit={(values, { resetForm }) => {
-        sendData(values, resetForm);
+        fetch(`/api/mailersend`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(values),
+        })
+          .then(function (response) {
+            return response.json();
+          })
+          .then((data) => {
+            console.log(data);
+            toast.success("El correo ha sido enviado correctamente!");
+            resetForm();
+          })
+          .catch((error) => {
+            console.log(error);
+            reject();
+          });
       }}
     >
       {({
