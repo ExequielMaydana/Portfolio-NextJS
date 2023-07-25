@@ -15,9 +15,11 @@ const Form = () => {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify(values),
+          body: values,
         }
       );
+
+      console.log(response);
 
       if (response) {
         toast.success("El correo ha sido enviado correctamente!");
