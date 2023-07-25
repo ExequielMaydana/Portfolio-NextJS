@@ -5,7 +5,6 @@ import "react-toastify/dist/ReactToastify.css";
 import { Formik } from "formik";
 
 const Form = () => {
-
   return (
     <Formik
       initialValues={{
@@ -40,6 +39,9 @@ const Form = () => {
           body: JSON.stringify(values),
         })
           .then(function (response) {
+            if (!response.ok) {
+              throw new Error("Network response was not ok");
+            }
             return response.json();
           })
           .then((data) => {
@@ -49,7 +51,7 @@ const Form = () => {
           })
           .catch((error) => {
             console.log(error);
-            reject();
+            toast.error("Ha ocurrido un error al enviar el correo.");
           });
       }}
     >
