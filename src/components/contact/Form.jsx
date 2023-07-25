@@ -38,12 +38,6 @@ const Form = () => {
           },
           body: JSON.stringify(values),
         })
-          .then(function (response) {
-            if (!response.ok) {
-              throw new Error("Network response was not ok");
-            }
-            return response.json();
-          })
           .then((data) => {
             console.log(data);
             toast.success("El correo ha sido enviado correctamente!");
