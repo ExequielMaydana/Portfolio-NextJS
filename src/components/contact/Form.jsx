@@ -32,14 +32,6 @@ const Form = () => {
         return errors;
       }}
       onSubmit={(values, { resetForm }) => {
-        // fetch(`/api/send_gmail`, {
-        //   method: "POST",
-        //   headers: {
-        //     "Content-Type": "application/json",
-        //   },
-        //   body: JSON.stringify(values),
-        // })
-
         axios
           .post("/api/send_gmail", values)
           .then((data) => {
