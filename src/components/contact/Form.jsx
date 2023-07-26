@@ -35,12 +35,10 @@ const Form = () => {
         axios
           .post("/api/send_gmail", values)
           .then((data) => {
-            console.log(data);
             toast.success("El correo ha sido enviado correctamente!");
             resetForm();
           })
           .catch((error) => {
-            console.log(error);
             toast.error("Ha ocurrido un error al enviar el correo.");
           });
       }}
