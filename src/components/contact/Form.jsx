@@ -31,7 +31,7 @@ const Form = () => {
         return errors;
       }}
       onSubmit={(values, { resetForm }) => {
-        fetch(`/api/mailersend`, {
+        fetch(`/api/send_gmail`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
