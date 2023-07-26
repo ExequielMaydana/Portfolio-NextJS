@@ -3,6 +3,7 @@ import styles from "../../styles/Contact.module.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Formik } from "formik";
+import axios from "axios";
 
 const Form = () => {
   return (
@@ -31,13 +32,16 @@ const Form = () => {
         return errors;
       }}
       onSubmit={(values, { resetForm }) => {
-        fetch(`/api/send_gmail`, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(values),
-        })
+        // fetch(`/api/send_gmail`, {
+        //   method: "POST",
+        //   headers: {
+        //     "Content-Type": "application/json",
+        //   },
+        //   body: JSON.stringify(values),
+        // })
+
+        axios
+          .post("/api/send_gmail", values)
           .then((data) => {
             console.log(data);
             toast.success("El correo ha sido enviado correctamente!");
