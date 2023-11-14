@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../../styles/AboutMe.module.css";
 import Image from "next/image";
 import imgAbout from "../../../public/imgs/imgAbout.svg";
-
+import { imagesSkills } from "./imagesSkills";
 const AboutMe = () => {
   return (
     <section className={styles.aboutMe} id="aboutMe">
@@ -43,40 +43,19 @@ const AboutMe = () => {
             recientemente.
           </p>
           <ul className={styles.aboutMe__ctrSkills}>
-            <div className={styles.separateSkills}>
-              <li>
-                <p className={styles.aboutMe__skill}>
-                  <i className="bx bx-right-arrow"></i>HTML5
-                </p>
-                <p className={styles.aboutMe__skill}>
-                  <i className="bx bx-right-arrow"></i>CSS3
-                </p>
-                <p className={styles.aboutMe__skill}>
-                  <i className="bx bx-right-arrow"></i>JavaScript
-                </p>
+            {imagesSkills.map((item) => (
+              <li key={item.id}>
+                <figure className={styles.containerImg}>
+                  <Image
+                    width={500}
+                    height={500}
+                    src={item.imageUrl}
+                    alt="image skill"
+                    className={styles.imgSkill}
+                  />
+                </figure>
               </li>
-              <li>
-                <p className={styles.aboutMe__skill}>
-                  <i className="bx bx-right-arrow"></i>React.js
-                </p>
-                <p className={styles.aboutMe__skill}>
-                  <i className="bx bx-right-arrow"></i>Next.js
-                </p>
-                <p className={styles.aboutMe__skill}>
-                  <i className="bx bx-right-arrow"></i>Node.js
-                </p>
-              </li>
-            </div>
-            <div className={styles.separateSkills}>
-              <li>
-                <p className={styles.aboutMe__skill}>
-                  <i className="bx bx-right-arrow"></i>MongoDB
-                </p>
-                <p className={styles.aboutMe__skill}>
-                  <i className="bx bx-right-arrow"></i>PostgreSQL
-                </p>
-              </li>
-            </div>
+            ))}
           </ul>
         </article>
       </div>
