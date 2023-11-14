@@ -41,15 +41,16 @@ const PageContact = () => {
         </article>
         <Form />
       </div>
-
-      <Link
-        href="https://wa.link/is1b74"
-        target="_blank"
-        className={styles.pageContact__what}
-      >
-        {" "}
-        <i className="bx bxl-whatsapp"></i>
-      </Link>
+      <div className={styles.pageContact__what}>
+        <Link
+          href="https://wa.link/is1b74"
+          target="_blank"
+          className={styles.pageContact__linkw}
+        >
+          {" "}
+          <i className={`bx bxl-whatsapp ${styles.pageContact__iconW}`}></i>
+        </Link>
+      </div>
     </section>
   );
 };

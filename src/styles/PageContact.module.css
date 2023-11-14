@@ -73,6 +73,15 @@
   justify-content: center;
 }
 
+.pageContact__linkw {
+  cursor: pointer;
+}
+
+.pageContact__iconW {
+  cursor: pointer;
+  color: #00bb2d;
+}
+
 @media screen and (min-width: 480px) {
   .pageContact__subtitle {
     width: 90%;
@@ -114,11 +123,13 @@
   }
 
   .pageContact__what {
-    position: fixed;
     top: 2em;
     right: 2em;
     color: #00bb2d;
     font-size: 2em;
+    width: auto;
+    height: 32px;
+    z-index: 999;
   }
 }
 

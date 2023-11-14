@@ -4,6 +4,7 @@
   position: fixed;
   top: 0;
   z-index: 2;
+  background: transparent;
 }
 
 .header__hideMenu {
@@ -211,6 +212,12 @@
 
   .nav__ctrLogo {
     height: 250px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .header {
+    background: transparent;
   }
 }
 

@@ -550,6 +550,7 @@ input:checked + .toggle .star--6 {
   transform: rotateX(60deg) rotateZ(-30deg);
   -webkit-animation: rotate 20s infinite linear;
   animation: rotate 20s infinite linear;
+  z-index: 999;
 }
 
 /* modificar los px del box-shadow en desktop */
@@ -685,12 +686,9 @@ input:checked + .toggle .star--6 {
 }
 
 @media screen and (min-width: 1200px) {
-
-  :root{
+  :root {
     --sizeOtherParagraph: 1em; /* 16px */
-
   }
-
 
   .view {
     top: 10em;
